@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="description goes here">
+        <meta name="keywords" content="HTML, CSS, XML, Javascript">
+        <meta name="author" content="your name">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio - Elizabeth Slonaker</title>
+        <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/393e357d21.js" crossorigin="anonymous"></script>
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+      <div id="container">
+        <!-- Change h1 to image of my handwritten name -->
+        <header>
+          <h1><a href="index.html">Elizabeth Slonaker</a></h1>
+          <nav>
+            <ul>
+              <li><a href="index.html" class="active">Projects</a></li>
+              <li><a href="about.html">Contact</a></li>
+            </ul>
+          </nav>
+
+          <!-- Responsive Nav -->
+          <div class="nav-responsive">
+            <i class="fas fa-bars fa-lg hamburgerMenu"></i>
+          </div>
+
+          <!-- Light & Dark Mode Toggle -->
+          <div class="toggle-container">
+            <input type="checkbox" id="switch" name="theme"/><label for="switch">Toggle</label>
+          </div>
+        </header>
+
+        <main>
+          <img src="images/medium.png" alt="Medium Website Redesign Concept" width="100%">
+          <div class="button">
+            <a href="http://ctec3350.egs3925.uta.cloud/Responsive/" target="_blank"><button>See Live Site</button></a>
+          </div>
+          <h2>Project Overview</h2>
+            <p>Medium is a social content sharing and publishing platform. Founded by one of the co-founders of Twitter, Evan Williams describes Medium as “a place for ideas that are longer than 500 characters.” Medium champions a unique subscription model in which members pay a $5 monthly fee to gain unlimited access to all of Medium’s articles. In return, these subscription fees are directly returned to the writers based on the level of engagement from the community in the form of “claps” (comparable to a like button). Medium is doing away with the outdated ad payment model, and paying writers based on the quality of their ideas. This subscription model is Medium’s competitive advantage, and spreading awareness of this model and vision is the focus of my redesign concept. </p>
+          <h2>My Role</h2>
+            <p>SWOT Analysis, Compeitive Analysis, Branding, Wireframes, Component Development, Website Development, Responsive Mobile & Tablet</p>
+          <h2>Goals</h2>
+            <p>The goal of this redesign concept is to grow participation in Medium’s Partner Program and Membership Subscription. To accomplish this goal, I identified 3 objectives:</p>
+            <ul>
+              <li>Grow Medium’s Paid Membership reader base</li>
+              <li>Grow profits of writers in the Medium Program</li>
+              <li>Increase the quality of Medium’s content, and encourage the spread of ideas and engagement site’s content</li>
+            </ul>
+          <h2>SWOT Analysis</h2>
+          <table border="1">
+            <tr>
+              <th rowspan="2">Internal</th>
+              <th>Strengths</th>
+              <th>Weaknesses</th>
+            </tr>
+            <tr>
+              <td>
+                <ul>
+                  <li>Encourages “social journalism” which connects professional journalism and user generated content</li>
+                  <li>Partner Program pays writers for their work based on engagement from members</li>
+                  <li>Access to a wide range of interests and writers from around the world</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>Hard to find information about Partner Program and Membership, because they are separate links and hard to locate</li>
+                  <li>Layout disrupts the user experience</li>
+                    <ul>
+                      <li>Images are to the right of the title - move to the left. Because visuals are the first thing users notice, right side images disrupt one's tendency to scan from left to right.</li>
+                    </ul>
+                  </li>
+                  <li>Limited customization</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th rowspan="2">External</th>
+              <th>Opportunities</th>
+              <th>Threats</th>
+            </tr>
+            <tr>
+              <td>
+                <ul>
+                  <li>Take advantage of the increasing amount of the 50+ age demographic that are using social media
+                    <ul>
+                        <li>Give option to increase text size and make it handicap accessible </li>
+                    </ul>
+                  </li>
+                  <li>Use of mobile devices to receive news continues to increase
+                  </li>
+                  <li>Medium was founded by a co-founder of Twitter as a place where one can write more than 140 characters. Integrate Medium and Twitter more.
+                    <ul>
+                      <li>Give option to link Twitter account with medium so the user’s Twitter name is attached to the article when shared</li>
+                    </ul>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>People are growing weary of trusting news found on social media
+                    <ul>
+                      <li>Show that medium is not another Twitter or Facebook, but a platform targeted at facilitating the production of high quality content. To this by growing amount of paid writers who have the incentive to produce high quality work.</li>
+                    </ul>
+                  </li>
+                  <li>Website building platforms like Wordpress and Squarespace are heavily advertised and becoming more and more popular
+                    <ul>
+                      <li>Advertise as a blog space with an existing audience of millions.</li>
+                    </ul>
+                  </li>
+                  <li>Social journalism is a new concept and not accepted by some in the Journalism field</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+
+          <h2>Sitemap</h2>
+           <img src="images/medium-sitemap.png" alt="Medium Sitemap" width="100%">
+
+          <h2>Branding</h2>
+          <div class="flex-container">
+            <div class="branding-color-1"></div>
+            <div class="branding-color-2"></div>
+            <div class="branding-color-3"></div>
+            <div class="branding-color-4"></div>
+            <div class="branding-color-5"></div>
+          </div>
+
+          <h2>Wireframes</h2>
+            <h3>Header Wireframe</h3>
+            <p>The current navigation features 9 different categories and 11 links. I condensed the amount of links to 5. The trending page will feature popular articles in the major categories, and these categories can be selected by the user if they are logged into an account. Topics will feature all the different categories with a search feature for easy access. Collections is a specific feature within Medium in which users can make a publication and collaborate with other writers. Partner will explain Medium's Partner Program and memembership fees. About explains Medium's mission and goals. Currently this link is located at the bottom, but I included it in the primary navigation for easier access.</p>
+            <img src="images/medium-header.png" alt="Medium Header Wireframe" width="100%">
+            <h3>Footer Wireframe</h3>
+            <p>The tertiary navigation includes the primary navigation and Help and Contact links. The subscription form serves to encourages more readers every month and to increases enagement with featured content. The goal is to convert these readers to paid members. The links to social media are intended to increase engagement with Medium across all platforms, which fits with the profile of the target audience because they are technically competent and heavy on social media usage. The call to action contains action verbs which link to ways that the user can get involved, either as a writer or reader or both. This is included to reach the goal of gaining more readers and more quality content.</p>
+            <img src="images/medium-footer.png" alt="Medium Footer Wireframe" width="100%">
+
+          <h2>BEM Components</h2>
+            <p>I utilized the BEM system to identity patterns in my design and translated these patterns into reusable components. The components below streamlined my front-end development, making my code clean, readable, and reusable. I also included the naming conventions and responsive designs for tablet and mobile.</p>
+            <div class="flex-container">
+              <img src="images/medium-component-1.png" alt="Medium Component Wireframe" >
+              <img src="images/medium-component-2.png" alt="Medium Component Wireframe" >
+              <img src="images/medium-component-3.png" alt="Medium Component Wireframe" >
+              <img src="images/medium-component-4.png" alt="Medium Component Wireframe" >
+              <img src="images/medium-component-5.png" alt="Medium Component Wireframe" >
+            </div>
+
+          <h2>Results</h2>
+            <div class="flex-container">
+              <img src="images/medium-results-1.png" alt="Medium Results">
+              <img src="images/medium-results-2.png" alt="Medium Results">
+              <img src="images/medium-results-3.png" alt="Medium Results">
+            </div>
+
+          <div class="button">
+            <a href="http://ctec3350.egs3925.uta.cloud/Responsive/" target="_blank"><button>See Live Site</button></a>
+          </div>
+
+        </main>
+
+        <footer>
+        </footer>
+
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+    </body>
+</html>
