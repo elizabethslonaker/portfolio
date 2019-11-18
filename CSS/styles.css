@@ -11,46 +11,86 @@ body {
 }
 h1 {
   font-family: Helvetica, Arial, sans-serif;
-  font-size:2.5em;
+  letter-spacing: 2px;
   text-align:center;
+  font-size: 1.5em;
 }
 h2 {
-  margin-top:12%;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  margin-top:10%;
+  font-weight: 800;
+  text-transform: uppercase;
+  color:#AAAAAA;
+  letter-spacing: 2px;
+  line-height: 2;
 }
 h3 {
-  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 1em;
+  color:#AAAAAA;
 }
-p {
+p, li {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 24px;
+  font-size: 18px;
+  text-align: justify;
 }
 #container {
   margin:5% 20%;
 }
 .flex-container {
   display:flex;
-  flex-wrap: wrap;
-
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.col {
+  flex-basis: 45%;
+}
+/* Results section of project pages */
+.flex-container img {
+  margin: 1em;
+  width:35%;
+  vertical-align: top;
 }
 .button {
   display:flex;
   justify-content: center;
-  margin:5% 0 15%;
+  margin:10% 0 15%;
 }
 button {
-  border:2px solid #007E96;
-  padding:1em 2em;
-  color:#007E96;
+  border:none;
+  border-bottom:1px solid #AAAAAA;
+  padding:1em 4em;
+  color:#AAAAAA;;
   font-size: 1em;
   background-color: transparent;
 }
 button:hover {
-  background-color:#007E96;
+  cursor: pointer;
   color:white;
+  background-color: #AAAAAA;
+
 }
-table {
-  border-collapse: collapse;
+.gray {
+  color:#AAAAAA;
+  text-align: center;
+  margin-bottom:3em;
+  line-height:0;
 }
+
+/* MOBILE GLOBAL */
+@media (max-width:768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .flex-container img {
+    width:100%;
+  }
+}
+
+
 /* TOGGLE */
 .toggle-container {
   display:inline;
@@ -58,7 +98,7 @@ table {
   padding:0;
 }
 html[data-theme='dark'] {
-    background-color: #131313;
+    background-color: #000000;
     color:#AAAAAA;
 }
 input[type=checkbox]{
@@ -86,7 +126,7 @@ label:after {
 	transition: 1s;
 }
 input:checked + label {
-	background: #007E96;
+	background: #FF6646;
 }
 input:checked + label:after {
 	left: calc(100% - 5px);
@@ -104,21 +144,18 @@ header {
   display:flex;
   display:-webkit-flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   margin-bottom:10%;
 }
-header h1 {
-  flex-basis: 100%;
-}
-header h1 a {
-  text-decoration: none;
-  color:#AAAAAA;
+header img {
+  margin:0 40% 1%;
+  width:25%;
+  border-radius:50%;
 }
 header nav {
   box-sizing:border-box;
   text-align: center;
-
 }
 header nav ul {
   padding:0;
@@ -132,17 +169,16 @@ header nav ul li {
 header nav ul li a {
   color:#AAAAAA;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 header nav ul li a:hover {
-  color:#007E96;
+  color:#FF6646;
 }
 .active {
-  color: #007E96;
+  color: #FF6646;
 }
 .nav-responsive {
   width:100%;
-  box-sizing:border-box;
   display:none;
 }
 .hamburgerMenu {
@@ -150,21 +186,29 @@ header nav ul li a:hover {
 }
 
 
-/* RESPONSIVE NAVIGATION */
+/* MOBILE NAVIGATION */
 @media (max-width:768px) {
+  header img {
+    width:50%;
+    margin-left: 25%;
+  }
   .nav-responsive {
-    display:block;
+    display:flex;
+    justify-content: flex-end;
   }
   nav {
     display:none;
-    background-color:#E7E7E7;
     width:100%;
+    height:100px;
   }
   nav ul li {
-    display:block;
     text-align:center;
     padding:.5em 0;
     font-size:1.2em;
+  }
+  /* got rid of dark feature on mobile */
+  .toggle-container {
+    display:none;
   }
 }
 
@@ -173,15 +217,16 @@ header nav ul li a:hover {
 @media (max-width:992px) {
 
 }
-
-/* PROJECTS */
+/* PROJECTS - HOME */
+main h2 {
+  text-transform: none;
+}
 .project-container {
   display:flex;
-  justify-content: space-between;
   margin:15% 0;
 }
 .project {
-
+  margin:0 1em;
 }
 .project img {
   width:100%;
@@ -189,7 +234,7 @@ header nav ul li a:hover {
 
 /* ABOUT */
 .fa-linkedin-in, .fa-github {
-  color:#007E96;
+  color:#AAAAAA;
 
 }
 .fa-linkedin-in {
@@ -197,7 +242,13 @@ header nav ul li a:hover {
 }
 
 /* Medium */
-
+.main-img {
+  width:40%;
+  margin-left: 30%;
+}
+.colors {
+  display:flex;
+}
 .branding-color-1 {
   width:100px;
   height:100px;
@@ -223,6 +274,11 @@ header nav ul li a:hover {
   height:100px;
   background-color:#dadada;
 }
-.flex-container img {
-  width: 50%;
+
+
+/* FOOTER */
+footer p {
+  color:#AAAAAA;
+  text-align: center;
+  margin:1.5em 0 3em;
 }
