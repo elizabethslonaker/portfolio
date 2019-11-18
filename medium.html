@@ -6,7 +6,7 @@
         <meta name="keywords" content="HTML, CSS, XML, Javascript">
         <meta name="author" content="your name">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio - Elizabeth Slonaker</title>
+        <title>Elizabeth Slonaker - Portfolio</title>
         <link rel="stylesheet" type="text/css" href="CSS/styles.css">
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/393e357d21.js" crossorigin="anonymous"></script>
@@ -18,11 +18,11 @@
       <div id="container">
         <!-- Change h1 to image of my handwritten name -->
         <header>
-          <h1><a href="index.html">Elizabeth Slonaker</a></h1>
+          <a href="index.html"><img src="images/logo.png" alt="Elizabeth Slonaker Portfolio - Logo"></a>
           <nav>
             <ul>
-              <li><a href="index.html" class="active">Projects</a></li>
-              <li><a href="about.html">Contact</a></li>
+              <li><a href="index.html">Projects</a></li>
+              <li><a href="about.html">About</a></li>
             </ul>
           </nav>
 
@@ -38,55 +38,58 @@
         </header>
 
         <main>
-          <img src="images/medium.png" alt="Medium Website Redesign Concept" width="100%">
+          <h1>Medium</h1>
+          <p class="gray">Website Redesign Concept</p>
+          <img src="images/medium-logo.png" alt="Medium Website Redesign Concept" class="main-img">
           <div class="button">
-            <a href="http://ctec3350.egs3925.uta.cloud/Responsive/" target="_blank"><button>See Live Site</button></a>
+            <a href="http://ctec3350.egs3925.uta.cloud/Responsive/" target="_blank"><button>VIEW LIVE SITE</button></a>
           </div>
-          <h2>Project Overview</h2>
-            <p>Medium is a social content sharing and publishing platform. Founded by one of the co-founders of Twitter, Evan Williams describes Medium as “a place for ideas that are longer than 500 characters.” Medium champions a unique subscription model in which members pay a $5 monthly fee to gain unlimited access to all of Medium’s articles. In return, these subscription fees are directly returned to the writers based on the level of engagement from the community in the form of “claps” (comparable to a like button). Medium is doing away with the outdated ad payment model, and paying writers based on the quality of their ideas. This subscription model is Medium’s competitive advantage, and spreading awareness of this model and vision is the focus of my redesign concept. </p>
-          <h2>My Role</h2>
-            <p>SWOT Analysis, Compeitive Analysis, Branding, Wireframes, Component Development, Website Development, Responsive Mobile & Tablet</p>
-          <h2>Goals</h2>
-            <p>The goal of this redesign concept is to grow participation in Medium’s Partner Program and Membership Subscription. To accomplish this goal, I identified 3 objectives:</p>
-            <ul>
+          <div class="flex-container">
+            <div class="col">
+              <h2>Overview</h2>
+              <p>Medium is a social content sharing and publishing platform. Founded by one of the co-founders of Twitter, Evan Williams describes Medium as “a place for ideas that are longer than 500 characters.” Medium champions a unique no ad subscription model in which writers are paid based on engagement. Spreading awareness of this model is the focus of this redesign concept.</p>
+              </div>
+              <div class="col">
+                <h2>My Role</h2>
+                <p>SWOT Analysis, Compeitive Analysis, Branding, Wireframes, Component Development, Website Development, Responsive Mobile & Tablet</p>
+              </div>
+          </div>
+          <h2>Objectives</h2>
+            <p>Grow participation in Medium’s Partner Program and Membership Subscription. To accomplish this goal, I identified 3 objectives:</p>
+            <ol>
               <li>Grow Medium’s Paid Membership reader base</li>
               <li>Grow profits of writers in the Medium Program</li>
               <li>Increase the quality of Medium’s content, and encourage the spread of ideas and engagement site’s content</li>
-            </ul>
+            </ol>
+          <h2>No Ad Subscription Model</h2>
+            <div class="flex-container">
+              <div class="col">
+                <h3>Medium Paid Membership</h3>
+                <p>Members pay a $5 monthly fee to gain unlimited access to all of Medium’s articles. This fee is distributed to the writers based on the amount of articles that the member "claps" (comparable to a "like"). For example, if a member claps for one article that month, the writer of that article receives the full $5.</p>
+              </div>
+              <div class="col">
+                <h3>Medium Partner Program</h3>
+                <p>Free to join, writers submit their work and get compensated when members from Medium's paid Membership "clap" their articles. Medium is doing away with the outdated ad payment model, and paying writers based on the quality of their ideas. </p>
+              </div>
+            </div>
           <h2>SWOT Analysis</h2>
-          <table border="1">
-            <tr>
-              <th rowspan="2">Internal</th>
-              <th>Strengths</th>
-              <th>Weaknesses</th>
-            </tr>
-            <tr>
-              <td>
+              <h3>Strengths</h3>
                 <ul>
                   <li>Encourages “social journalism” which connects professional journalism and user generated content</li>
                   <li>Partner Program pays writers for their work based on engagement from members</li>
                   <li>Access to a wide range of interests and writers from around the world</li>
                 </ul>
-              </td>
-              <td>
+                <h3>Weaknesses</h3>
                 <ul>
                   <li>Hard to find information about Partner Program and Membership, because they are separate links and hard to locate</li>
                   <li>Layout disrupts the user experience</li>
                     <ul>
-                      <li>Images are to the right of the title - move to the left. Because visuals are the first thing users notice, right side images disrupt one's tendency to scan from left to right.</li>
+                      <li>Images are to the right of the title. Visuals are the first thing that users notice - right sided images disrupt one's tendency to scan from left to right.</li>
                     </ul>
                   </li>
-                  <li>Limited customization</li>
+
                 </ul>
-              </td>
-            </tr>
-            <tr>
-              <th rowspan="2">External</th>
-              <th>Opportunities</th>
-              <th>Threats</th>
-            </tr>
-            <tr>
-              <td>
+              <h3>Opportunities</h3>
                 <ul>
                   <li>Take advantage of the increasing amount of the 50+ age demographic that are using social media
                     <ul>
@@ -101,8 +104,7 @@
                     </ul>
                   </li>
                 </ul>
-              </td>
-              <td>
+                <h3>Threats</h3>
                 <ul>
                   <li>People are growing weary of trusting news found on social media
                     <ul>
@@ -116,15 +118,13 @@
                   </li>
                   <li>Social journalism is a new concept and not accepted by some in the Journalism field</li>
                 </ul>
-              </td>
-            </tr>
-          </table>
+
 
           <h2>Sitemap</h2>
            <img src="images/medium-sitemap.png" alt="Medium Sitemap" width="100%">
 
           <h2>Branding</h2>
-          <div class="flex-container">
+          <div class="colors">
             <div class="branding-color-1"></div>
             <div class="branding-color-2"></div>
             <div class="branding-color-3"></div>
@@ -141,7 +141,7 @@
             <img src="images/medium-footer.png" alt="Medium Footer Wireframe" width="100%">
 
           <h2>BEM Components</h2>
-            <p>I utilized the BEM system to identity patterns in my design and translated these patterns into reusable components. The components below streamlined my front-end development, making my code clean, readable, and reusable. I also included the naming conventions and responsive designs for tablet and mobile.</p>
+            <p>I utilized the BEM system to identity patterns in the design and translated these patterns into reusable components. The components below make the code clean, readable, and reusable. I included the naming conventions and created responsive designs for both tablet and mobile.</p>
             <div class="flex-container">
               <img src="images/medium-component-1.png" alt="Medium Component Wireframe" >
               <img src="images/medium-component-2.png" alt="Medium Component Wireframe" >
@@ -152,18 +152,21 @@
 
           <h2>Results</h2>
             <div class="flex-container">
-              <img src="images/medium-results-1.png" alt="Medium Results">
-              <img src="images/medium-results-2.png" alt="Medium Results">
-              <img src="images/medium-results-3.png" alt="Medium Results">
+              <img src="images/medium-home.png" alt="Medium Results">
+              <img src="images/medium-topics.png" alt="Medium Results">
+              <img src="images/medium-collections.png" alt="Medium Results">
+              <img src="images/medium-partner.png" alt="Medium Results">
+              <img src="images/medium-about.png" alt="Medium Results">
             </div>
 
           <div class="button">
-            <a href="http://ctec3350.egs3925.uta.cloud/Responsive/" target="_blank"><button>See Live Site</button></a>
+            <a href="http://ctec3350.egs3925.uta.cloud/Responsive/" target="_blank"><button>VIEW LIVE SITE</button></a>
           </div>
 
         </main>
 
         <footer>
+          <p>Made with love by Elizabeth</p>
         </footer>
 
         </div>
