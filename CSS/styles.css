@@ -282,6 +282,10 @@ main h2 {
 }
 
 /* FYR */
+.fyr-logo {
+  width:20%;
+  margin-left:40%;
+}
 table {
   border-collapse: collapse;
 }
