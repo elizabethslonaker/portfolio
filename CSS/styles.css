@@ -30,10 +30,15 @@ h3 {
   font-weight: 400;
   letter-spacing: 2px;
   font-size: 1em;
+  margin:4em 0 1em 0;
+
 }
 p, li {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 18px;
+}
+.center {
+  text-align: center;
 }
 #container {
   margin:5% 20%;
@@ -62,16 +67,13 @@ p, li {
 }
 button {
   border:none;
-  border-bottom:1px solid #AAAAAA;
+  color:white;
+  background-color: #AAAAAA;
   padding:1em 4em;
   font-size: 1em;
-  background-color: transparent;
-  color:#AAAAAA;
 }
 button:hover {
   cursor: pointer;
-  color:white;
-  background-color: #AAAAAA;
 
 }
 .gray {
@@ -83,8 +85,11 @@ button:hover {
 
 /* MOBILE GLOBAL */
 @media (max-width:768px) {
+  .col p {
+    text-align: left;
+  }
   #container {
-    margin:5%;
+    margin:7%;
   }
   .flex-container {
     flex-direction: column;
@@ -93,7 +98,6 @@ button:hover {
     width:100%;
   }
 }
-
 
 /* TOGGLE */
 .toggle-container {
@@ -140,9 +144,6 @@ label:active:after {
 	width: 45px;
 }
 
-
-
-
 /* HEADER */
 header {
   display:flex;
@@ -188,10 +189,11 @@ header nav ul li a:hover {
   cursor: pointer;
 }
 
-
 /* MOBILE NAVIGATION */
 @media (max-width:768px) {
   header img {
+    width:45%;
+    margin-left:27.5%;
   }
   .nav-responsive {
     display:flex;
@@ -216,7 +218,6 @@ header nav ul li a:hover {
     display:none;
   }
 }
-
 
 /* TABLET */
 @media (max-width:992px) {
@@ -280,7 +281,18 @@ main h2 {
   background-color:#dadada;
 }
 
-
+/* FYR */
+table {
+  border-collapse: collapse;
+}
+table th {
+  background-color:#AAAAAA;
+  color:white;
+}
+table tr, td {
+  border:1px solid #AAAAAA;
+  padding:.5em 1em;
+}
 /* FOOTER */
 footer p {
   color:#AAAAAA;
