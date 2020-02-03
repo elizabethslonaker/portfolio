@@ -4,63 +4,101 @@
         <meta charset="utf-8">
         <meta name="description" content="description goes here">
         <meta name="keywords" content="HTML, CSS, XML, Javascript">
-        <meta name="author" content="your name">
+        <meta name="author" content="Elizabeth Slonaker">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Elizabeth Slonaker</title>
+        <title>Elizabeth Slonaker - Portfolio</title>
         <link rel="stylesheet" type="text/css" href="CSS/styles.css">
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/393e357d21.js" crossorigin="anonymous"></script>
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     </head>
 
     <body>
-      <div id="container">
-        <!-- Change h1 to image of my handwritten name -->
+      <div class="container">
         <header>
-          <a href="index.html"><img src="images/logo.png" alt="Elizabeth Slonaker Portfolio - Logo"></a>
+          <div class="logo">
+            <a href="index.html"><img src="images/signature.png" alt="Elizabeth Slonaker Portfolio - Logo"></a>
+          </div>
+
           <nav>
             <ul>
-              <li><a href="index.html" class="active">Projects</a></li>
+              <li><a href="index.html" class="active">Work</a></li>
+              <li class="middle"><a href="resume.html">Resume</a></li>
               <li><a href="about.html">About</a></li>
             </ul>
           </nav>
-
-          <!-- Responsive Nav -->
-          <div class="nav-responsive">
-            <i class="fas fa-bars fa-lg hamburgerMenu"></i>
-          </div>
-
-          <!-- Light & Dark Mode Toggle -->
-          <div class="toggle-container">
-            <input type="checkbox" id="switch" name="theme"/><label for="switch">Toggle</label>
-          </div>
         </header>
 
-        <main>
-          <h2 class="home-bio">Elizabeth is a Web Designer + Developer based in Fort Worth, Texas. Her work lies at the intersection between UX research, design, and code - all with a human touch.</h2>
-          <div class="project-container">
-            <div class="project">
-              <h3>Medium</h3>
-                <a href="medium.html"><img src="images/medium-1.png" alt="Elizabeth Slonaker Project"></a>
-            </div>
-            <div class="project">
-              <h3>Forever Young Records</h3>
-                <a href="fyr.html"><img src="images/fyr-home.png" alt="Elizabeth Slonaker Project"></a>
-            </div>
-            <div class="project">
-              <h3>Texas Republic</h3>
-                <a href="txrepublic.html"><img src="images/txrepublic.png" alt="Elizabeth Slonaker Project"></a>
-            </div>
+        <div class="mobileNav">
+          <div class="logo">
+            <a href="index.html"><img src="images/signature.png" alt="Elizabeth Slonaker Portfolio - Logo"></a>
           </div>
+          <div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+            <div id="myLinks">
+              <a href="index.html" class="active">Work</a>
+              <a href="resume.html">Resume</a>
+              <a href="about.html">About</a>
+            </div>
+
+          </div>
+        </div>
+
+
+
+        <main>
+          <div class="summary">
+            <h2> <span class="highlight">I'm Elizabeth, a UX/UI Designer / Developer in Fort Worth, Texas.</span> Passionate about both design and code, I create delighful experiences on the web.</h2>
+          </div>
+          <div class="flex-container">
+
+            <div class="col project">
+              <a href="fyr.html"><img src="images/fyr-home-copy.png" alt="Elizabeth Slonaker Project"></a>
+            </div>
+            <div class="col">
+              <h3>Forever Young Records</h3>
+              <p>A redesigned shopping experience to facilitate online sales</p>
+              <ul class="project-links">
+                <li><a href="fyr.html">Case Study</a></li>
+                <li><a href="">Repository</a></li>
+              </ul>
+            </div>
+
+
+
+            <div class="col project">
+              <a href="txrepublic.html"><img src="images/txr.png" alt="Elizabeth Slonaker Project"></a>
+            </div>
+            <div class="col">
+              <h3>Texas Republic</h3>
+              <p>A comprehensive web presence to generate brand engagement and online sales</p>
+              <ul class="project-links">
+                <li><a href="txrepublic.html">Case Study</a></li>
+                <li><a href="">Repository</a></li>
+              </ul>
+            </div>
+
+
+            <div class="col project">
+              <a href="medium.html"><img src="images/medium.png" alt="Elizabeth Slonaker Project"></a>
+            </div>
+            <div class="col">
+              <h3>Medium</h3>
+              <ul class="project-links">
+                <li><a href="medium.html">Case Study</a></li>
+                <li><a href="">Repository</a></li>
+              </ul>
+            </div>
+
+          </div>
+
         </main>
+        </div>
 
         <footer>
-          <p>Made with love by Elizabeth</p>
-
+          <p>Contact / <a href="mailto:elizaslonaker@gmail.com?" class="email highlight">elizaslonaker@gmail.com</a></p>
         </footer>
-
-        </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="js/app.js"></script>
