@@ -245,16 +245,17 @@ footer {
     display:none;
   }
   .mobileNav {
-    display:flex;
-    justify-content:space-between;
+    display:block;
     overflow: hidden;
     position: relative;
+    width:100%;
   }
   .mobileNav #myLinks {
-    margin-top:6em;
+    margin-top:4em;
   }
   .mobileNav a {
     margin-bottom: 2em;
+    padding:.5em;
     display: block;
     text-align:center;
   }
@@ -266,7 +267,7 @@ footer {
     font-size:1.5em;
   }
   .logo img {
-    width:50vw;
+    width:40vw;
   }
 
   /* Footer */
