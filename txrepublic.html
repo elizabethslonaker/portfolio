@@ -4,144 +4,307 @@
         <meta charset="utf-8">
         <meta name="description" content="description goes here">
         <meta name="keywords" content="HTML, CSS, XML, Javascript">
-        <meta name="author" content="your name">
+        <meta name="author" content="Elizabeth Slonaker">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Elizabeth Slonaker - Portfolio</title>
+        <title>Elizabeth Slonaker - Portfolio Project</title>
         <link rel="stylesheet" type="text/css" href="CSS/styles.css">
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/393e357d21.js" crossorigin="anonymous"></script>
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <!-- Animate on scroll library (https://michalsnik.github.io/aos/) -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159440295-1"></script>
+        <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-159440295-1');</script>
     </head>
 
     <body>
-      <div id="container">
-        <!-- Change h1 to image of my handwritten name -->
+      <div id="wrapper">
         <header>
-          <a href="index.html"><img src="images/logo.png" alt="Elizabeth Slonaker Portfolio - Logo"></a>
+          <div class="logo">
+            <a href="index.html"><img src="images/signature.png" alt="Elizabeth Slonaker Portfolio - Logo"></a>
+          </div>
           <nav>
             <ul>
-              <li><a href="index.html">Projects</a></li>
+              <li><a href="index.html">Work</a></li>
               <li><a href="about.html">About</a></li>
+              <li><a href="images/elizabeth-slonaker-resume.pdf" download target="_blank">Resume</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
           </nav>
-
-          <!-- Responsive Nav -->
-          <div class="nav-responsive">
-            <i class="fas fa-bars fa-lg hamburgerMenu"></i>
-          </div>
-
-          <!-- Light & Dark Mode Toggle -->
-          <div class="toggle-container">
-            <input type="checkbox" id="switch" name="theme"/><label for="switch">Toggle</label>
-          </div>
         </header>
 
         <main>
-          <h1>Texas Republic </h1>
-          <p class="gray">Website Redesign Concept</p>
-          <img src="images/txr-logo.png" alt="Texas Republic Website Redesign Concept" class="main-img">
-          <div class="button">
-            <a href="http://ctec4309.egs3925.uta.cloud/txrepublic/" target="_blank"><button>VIEW LIVE SITE</button></a>
+          <div class="logo-mobile">
+            <a href="index.html"><img src="images/signature.png" alt="Elizabeth Slonaker Portfolio - Logo"></a>
           </div>
-          <p class="center"><b>*THIS IS AN ONGOING PROJECT*</b></p>
+
+          <img src="images/txr-layout.png" alt="Texas Republic Website Redesign Concept" width="100%">
+          <div class="container">
+            <h1>Texas Republic </h1>
+            <h2>How redesigning the website’s booking experience, an online store, and implementing crowdsourcing generates engagement across all online platforms</h2>
+            <div class="btn-projects btn-boxShadow">
+              <li><a href="http://ctec4321.egs3925.uta.cloud/fyr/shop.php" target="_blank" class="btn-primary">View Site</a></li>
+              <li><a href="https://github.com/elizabethslonaker/texasrepublic" target="_blank">Repository</a></li>
+            </div>
+          </div>
+
+          <div class="container" data-aos="fade-right" data-aos-duration="1500">
           <div class="flex-container">
             <div class="col">
               <h2>Overview</h2>
-              <p>Texas Republic Bar & Kitchen is a local bar native to Texas, located in the heart of Fort Worth's West 7th. This modern, Texas inspired bar is a key destination for food, drinks, and a vibrant nightlife. They host weekly events, private gatherings, catering, and bottle services.</p>
+              <p>Texas Republic is a bar and kitchen native to Texas. Located in the heart of Fort Worth's West 7th, they embrace the mantra of everything is bigger in Texas.</p>
+              <p>*This is a website redesign concept for a course project.</p>
             </div>
             <div class="col">
-              <h2>My Role</h2>
-              <p>Market Research, Segmentation, Value Proposition, Marketing Strategies, Wireframes, Email Marketing, Website Design & Development, Responsive Mobile & Tablet</p>
+              <h2>Scope</h2>
+              <ul class="dashed-list">
+                <li>Market Research</li>
+                <li>Sitemap & Wireframes</li>
+                <li>Visual Design</li>
+                <li>Email Marketing</li>
+                <li>SEO</li>
+                <li>Front-End Development</li>
+                <li>Responsive Development</li>
+              </ul>
             </div>
           </div>
-          <h2>Objectives</h2>
-            <ol>
-              <li>Drive online sale conversions through new website features</li>
-              <li>Spread brand presence and awareness across all online platforms</li>
-            </ol>
-            <h2>Target Audience Segmentation</h2>
-              <h3>Target Audience</h3>
-              <p>Young adults/Millenials between the ages of 21-34 located in the DFW metroplex</p>
-              <h3>Geographics - Geography</h3>
-                <p>Texas Republic's location on West 7th Street attracts a particular customer base who is interested in Fort Worth's culture and vibe.</p>
-              <h3>Demographics - Age, Gender, Education, Income</h3>
-                <p>The millennial, young adult audience is similar in technology and social media usage and psychological profiles.</p>
-                <p>This demographic is:</p>
-                <ul>
-                  <li>Technologically competent</li>
-                  <li>Highly active on social media</li>
-                  <li>Motivated to click on content that they find entertaining or funny</li>
-                  <li>Concerned with their social identity</li>
-                  <li>Prioritizes experiences and making/capturing memories</li>
+
+          <div class="flex-container">
+            <div class="col">
+              <h2>Objectives</h2>
+              <ul class="dashed-list">
+                <li>Grow online sales </li>
+                <li>Spread brand awareness across online platforms</li>
+                <li>Convert social media users to site traffic</li>
+              </ul>
+            </div>
+            <div class="col">
+              <h2>Results</h2>
+              <ul class="dashed-list">
+                <li>Online booking form</li>
+                <li>Crowdsourcing form </li>
+                <li>Online merchandise store</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="container" data-aos="fade-left" data-aos-duration="1500">
+          <h2>Market Segmentation</h2>
+          <table>
+            <tr>
+              <th colspan="2">Target Audience</th>
+            </tr>
+            <tr>
+              <td colspan="2"><p>Young adults and millennials between the ages of 21-34, located in the DFW metroplex</p></td>
+            </tr>
+            <tr>
+              <th>Geographics</th>
+              <th>Demographics</th>
+            </tr>
+            <tr>
+              <td>
+                <ul class="dashed-list">
+                  <li>DFW with a concentration in Fort Worth</li>
+                  <li>Suburban - urban populations </li>
                 </ul>
-                <p>What does this mean for their website?</p>
-                <ul>
-                  <li>Make the website mobile responsive. Place key information such as hours and location at the top for the mobile version.</li>
-                  <li>Take advantage of social trends and pop culture. Ensure content is funny and engaging and utilize all different forms of posting (photos, video, gifs, boomerangs, etc).</li>
-                  <li>Use photos to emphasize the Texas Republic "experience"s instead of product and decor shots. The products are an important revenue stream, but it's the experience that will keep this demographic coming back.</li>
+              </td>
+              <td>
+                <ul class="dashed-list">
+                  <li>Millennial, Young Adults</li>
+                  <li>Men & Women </li>
+                  <li>High smart phone and internet usage </li>
                 </ul>
-          <h2>Value Proposition</h2>
-	          <h3>Current Online Revenue Model</h3>
-						  <ul>
-							  <li>Ticket Sales</li>
-						  	<li>VIP Table Packages</li>
-							  <li>Catering</li>
-						  	<li>Private Events</li>
-					  	</ul>
-					  <h3>How this redesign will increase online revenue</h3>
-					  <ul>
-              <li>Facilitate booking events and catering through online contact forms</li>
-                <p>The current website doesn't provide a clear way to contact the client to obtain more information about bookings.</p>
-						  <li>Online merchandise store</li>
-                <p>Expanding the client's product line into online merchandising would accomplish the two objectives of this redesign (1) drive online sales (2) spread the brand. Merchandise which mixes the Western culture of Texas with the rustic, modern vibes of Fort Worth would resonate strongly with the young adult target audience.</p>
-					  </ul>
-          <h2>Marketing Strategy</h2>
-            <p>I identified the following online marketing strategies in order to accomplish the objectives of sale conversions and brand awareness across all online platforms.</p>
-            <h3>Cross Channel Promotion</h3>
-              <p>This is a form of marketing that targets the customers of one product or service by promoting a similar product. The client can advertise products from their website (merchandise and event tickets) on their social media and redirect traffic to their site.</p>
-            <h3>Paid Media</h3>
-              <p>Purchase Facebook and Instagram ads. Although the click through rate is less than %1, as long as these ads are placed in front of the right audience the ads will increase brand awareness.</p>
-            <h3>Social Media</h3>
-              <p>For the millennial demographic, the most engaging content is funny and entertaining. For example, using memes is an excellent way to connect to this audience. The client needs to utilise all (often underused) functions of each app such as snapchat filters, geofilters, Instagram stories, hashtags, unique Instagram grid layouts, boomerangs etc.</p>
-            <h3>Video Marketing</h3>
-              <p>Videos and boomerangs are a highly engaging and visually appealing form of media that isn’t being used by their current site, and is underused on their social media. Using videos will help the client’s content stand out from the competition.</p>
-            <h3>Content Marketing</h3>
-              <p>This form of marketing takes advantage of a current or relevant event that affects many people. For example, the client can host a Halloween costume event and offer a reward such as their new merch.</p>
-          <h2>Features</h2>
-            <p>Based on the marketing strategies and research, I developed four website features to support the redesign objectives.</p>
-            <h3>1. Private Events Inquiry</h3>
-              <p>The current site doesn’t provide a convenient way to contact the client with questions or immediate bookings. Adding a form makes the booking experience easier and decreases client frustration. It is standard in the industry for restaurants and venues to contact and answer questions for potential clients via email. Therefore, this feature is key to implement.</p>
-            <h3>2. Catering Orders</h3>
-              <p>The current site has a page titled “Catering/Private Events” but this page makes no distinction between the two. It is unclear if the menu is for private events hosted at their facility, or if the menu is for catering, or both. Furthermore, no contact information is given. Taking online catering orders and inquiries helps the client keep track of orders and decreases the amount of time that staff spends on the phone and away from their work.</p>
-            <h3>3. Crowdsource New Drink Form</h3>
-              <p>This form allows customers to submit a drink idea to add to the menu. Crowdsourcing stregthens the customer relationship because it directly involves the audience in the business. It creates trust in the brand because the audience can give their feedback and see the physical results of that feedback. Furthermore, this idea is highly marketable on their website and across their social media, a platform which thrives off of user engagement. Therefore, current social media followers can easily be converted to website traffic.</p>
-            <h3>4. Merchandise Store</h3>
-              <p>An online merchandise store grows the Texas Republic’s brand, while also creating another stream of revenue online. This store is easily advertised on social media. Products include e-gift cards, hats and apparel, and drinkware and koozies. Furthermore, online shopping fits with the technology usage of the young adult target audience.</p>
-          <h2>Results</h2>
+              </td>
+            </tr>
+            <tr>
+              <th>Behavior</th>
+              <th>Psychographics</th>
+            </tr>
+            <tr>
+              <td>
+                <ul class="dashed-list">
+                  <li>Aptitude to buy online</li>
+                  <li>Technologically competent </li>
+                  <li>Highly active on social media </li>
+                  <li>Motivated to click on entertaining and funny content</li>
+                </ul>
+              </td>
+              <td>
+                <ul class="dashed-list">
+                  <li>Concerned with identity and individualism</li>
+                  <li>Prioritizes experiences and capturing memories </li>
+                  <li>Seeks instant gratification </li>
+                  <li>Aware of pop culture and trends</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th colspan="2">What does this mean for the website?</th>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <ul class="dashed-list">
+                  <li>Emphasize the Texas culture, specifically Fort Worth</li>
+                  <li>Mobile first approach to design and development</li>
+                  <li>Ensure booking and contact information is easy to find - reduces bounce rate (SEO)  </li>
+                  <li>Take advantage of social trends and pop culture (polaroids, neon signs, etc.)</li>
+                  <li>Images need to emphasize the Texas Republic "experience" over the products and decor. The products are an important revenue stream, but it's the experience that will keep this demographic coming back.</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="container" data-aos="fade-right" data-aos-duration="1500">
+          <h2>"Because none of the links work"<br><span class="tag">Interviewing the Employees</span></h2>
+          <p>We asked the Texas Republic staff about their current site to better understand its main issues. The interviews highlighted a communication problem with their customers. It became clear that the website needs to provide a better way for customers to contact the business. Addressing this need became a key objective moving forward.</p>
+          <div class="flex-container">
+            <div class="box"><p>Rafael </p><p class="p-lg">“The website looks old with new features. I can’t click the links to get in contact with anyone online, because none of the links worked.”</p></div>
+            <div class="box"><p>Ali</p><p class="p-lg">“Getting in contact with the owner here is almost impossible. Even in person, so I know it must be hard online."</p></div>
+            <div class="box"><p>Nelson  </p><p class="p-lg">“The website does look crappy compared to other bars, but it works for me. If people are having problems with the links, they figure out some way to book with us regardless."</p></div>
+            </div>
+          </div>
+
+          <div class="container" data-aos="fade-left" data-aos-duration="1500">
+          <h2>Sitemap</h2>
+            <img src="images/txr-sitemap.png" alt="Sitemap" width="100%">
+          </div>
+
+          <div class="container" data-aos="fade-right" data-aos-duration="1500">
+          <h2>Wireframes<br><span class="tag">Low-fidelity</span></h2>
+            <img src="images/txr-wireframe.png" alt="Low-fidelity Wireframes" width="100%">
+          </div>
+
+          <div class="container" data-aos="fade-left" data-aos-duration="1500">
+          <h2>Visual Design<br><span class="tag">Stylescapes</span></h2>
+            <p>I designed three stylescapes to determine the site's visual language. I selected "The Modern Cowboy" because it best conveys the unique Western culture of Fort Worth and Texas, but with a modern touch that caters to the young adult target market. The dark tones and neon lights are intended to embody the vibrant nightlife of Texas Republic, while the distressed text and wood textures convey the rustic, weathered charm of Texas.</p>
+            <div class="stylescapes">
+              <h3>1. The Modern Cowboy</h3>
+                <img src="images/txr-stylescape-2.png" alt="Stylescape 2 - The Modern Cowboy" width="75%">
+                <img src="images/circle.png" alt="Low-fidelity Wireframes" class="drawn-circle" width="100%">
+              <h3>2. Distressed Texas</h3>
+                <img src="images/txr-stylescape-1.png" alt="Stylescape 1 - Distressed Texas" width="75%">
+              <h3>3. Stockyard Culture</h3>
+                <img src="images/txr-stylescape-3.png" alt="Stylescape 3 - Stockyard Culture" width="75%">
+            </div>
+          </div>
+
+          <div class="container" data-aos="fade-right" data-aos-duration="1500">
+          <h2>Developing 3 Features<br><span class="tag">Event Booking, Crowdsourcing, Online Store</span></h2>
+            <h2>1. Online Booking</h2>
             <div class="flex-container">
-              <img src="images/txr-home.png" alt="Texas Republic Results">
-              <img src="images/txr-dining.png" alt="Texas Republic Results">
-              <img src="images/txr-youridea.png" alt="Texas Republic Results">
-              <img src="images/txr-email.JPG" alt="Texas Republic Results">
-              <img src="images/txr-email-2.png" alt="Texas Republic Results">
+              <div class="box">
+                <p>Step 1</p>
+                <p class="p-lg">Customer submits inquiry for private event or catering</p>
+              </div>
+              <div class="box">
+                <p>Step 2</p>
+                <p class="p-lg">Texas Republic receives automated email with their inquiry</p>
+              </div>
+            </div>
+            <h4><b>OBJECTIVE #1:</b>Growing Online Sales</h4>
+            <p>This feature decreases customer frustration with being unable to reach a staff member. Eliminating current customer frustration with booking will facilitate online sales. Furthermore, Texas Republic can systematically and efficiently track all bookings.</p>
+            <img src="demos/txr-events.gif" alt="Online Booking Demo Gif" class="gif">
+            <figcaption>Demo of online booking form</figcaption>
+            <img src="images/txr-email-events.jpg" alt="Event Booking Email to Admin" class="gif">
+            <figcaption>This email is sent to the admin to inform them about a booking inquiry</figcaption>
+          </div>
+
+            <div class="container" data-aos="fade-left" data-aos-duration="1500">
+            <h3>2. Crowdsourcing Form</h3>
+            <div class="flex-container">
+              <div class="box">
+                <p>Step 1</p>
+                <p class="p-lg">User submits idea for new drink</p>
+              </div>
+              <div class="box">
+                <p>Step 2</p>
+                <p class="p-lg">Client receives email with submission</p>
+              </div>
+              <div class="box">
+                <p>Step 3</p>
+                <p class="p-lg">Automatic email sent to user - email marketing</p>
+              </div>
+            </div>
+            <h4><b>OBJECTIVE #2:</b> Growing the Brand</h4>
+            <p>Crowdsourcing strengthens Texas Republic’s relationship with their community, by directly involving customers in the business. It creates customer trust in the brand, as they can see the physical results of their involvement.</p>
+            <h4><b>OBJECTIVE #3:</b> Converting Social Media Followers to Web Traffic</h4>
+            <p>This idea is highly marketable across their social media, a platform which thrives off of user engagement. Therefore, current social media followers can easily be converted to website traffic. </p>
+            <img src="demos/txr-crowdsource.gif" class="gif" alt="Crowdsourcing Form Demo Gif">
+            <figcaption>Demo of crowdsourcing form</figcaption>
+            <img src="images/txr-email-crowdsource.png" alt="Crowdsource Email to User for Email Marketing" class="gif">
+            <figcaption>This email is sent to the user after a submission.</figcaption>
+          </div>
+
+            <div class="container" data-aos="fade-right" data-aos-duration="1500">
+            <h3>3. Online Merchandise Store</h3>
+              <p></p>
+              <p></p>
+              <div class="flex-container">
+                <div class="box">
+                  <p>Step 1</p>
+                  <p class="p-lg">Customer clicks on product and adds to cart</p>
+                </div>
+                <div class="box">
+                  <p>Step 2</p>
+                  <p class="p-lg">Mockup of shopping cart page (full function not developed)</p>
+                </div>
+                <div class="box">
+                  <p>Step 3</p>
+                  <p class="p-lg">Mockup of checkout process (full function not developed)</p>
+                </div>
+              </div>
+              <h4><b>OBJECTIVE #1:</b> Growing Online Sales</h4>
+              <p>An online store creates a new stream of online revenue. Products could include branded apparel, merchandise, and drinkware. Furthermore, expanding into online merchandising fits with the high technology usage and the merch trend of the young adult target audience.</p>
+              <h4><b>OBJECTIVE #2:</b> Growing the Brand</h4>
+                <p>Wearing the merchandise furthers the Texas Republic brand, because it increases the brand's awareness and exposure amongst the target audience.</p>
+              <h4><b>OBJECTIVE #3:</b> Convert Social Media Followers to Web Traffic</h4>
+              <p>Store products can be easily advertised on social media. Instagram and Facebook both have features suited for businesses to sell and market their products, such as direct linking to a product page.</p>
+              <img src="demos/txr-store.gif" class="gif" alt="Online Store Demo Gif">
+              <figcaption>Mockup of the online store, from adding items to cart to checkout</figcaption>
             </div>
 
-          <p class="center"><b>*THIS IS AN ONGOING PROJECT*</b></p>
+            <h2>Results</h2>
+            <div class="flex-container">
+              <div class="col">
+                <img src="images/txr-booking.png" width="100%" alt="">
+                <figcaption>Online booking</figcaption>
+              </div>
+              <div class="col">
+                <img src="images/txr-crowdsource.png" width="100%" alt="">
+                <figcaption>Crowdsource form increases engagement and site traffic</figcaption><br>
+                <img src="images/txr-store.png" width="100%" alt="">
+                <figcaption>Online store increases sales and brand awareness</figcaption>
+              </div>
+            </div>
 
-          <div class="button">
-            <a href="http://ctec4309.egs3925.uta.cloud/txrepublic/" target="_blank"><button>VIEW LIVE SITE</button></a>
-          </div>
+            <div class="btn-projects">
+              <a href="http://ctec4321.egs3925.uta.cloud/fyr/shop.php" target="_blank" class="btn-primary">View Site</a>
+              <a href="https://github.com/elizabethslonaker/texasrepublic" target="_blank" class="btn-primary">Repository</a>
+            </div>
 
         </main>
+        </div>
 
         <footer>
-          <p>Made with love by Elizabeth</p>
+          <a href="mailto:elizaslonaker@gmail.com?"><i class="far fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/elizabeth-slonaker" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/elizabethslonaker" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://open.spotify.com/user/elizags_" target="_blank"><i class="fab fa-spotify"></i></a>
         </footer>
 
+        <!-- Mobile Nav -->
+        <div id="sticky-nav">
+          <a href="index.html"><i class="fas fa-desktop"></i></i><br>Work</a>
+                <a href="resume.html"><i class="fas fa-download"></i><br>Resume</a>
+          <a href="about.html"><i class="far fa-user"></i></i><br>About + Contact</a>
         </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="js/app.js"></script>
+        <!-- AOS.js - animate on scroll library -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init();</script>
     </body>
 </html>

@@ -10,97 +10,102 @@
         <link rel="stylesheet" type="text/css" href="CSS/styles.css">
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/393e357d21.js" crossorigin="anonymous"></script>
+        <!-- Animate on scroll library (https://michalsnik.github.io/aos/) -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159440295-1"></script>
+        <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-159440295-1');</script>
     </head>
 
     <body>
-      <div class="container">
+      <div id="wrapper">
         <header>
           <div class="logo">
             <a href="index.html"><img src="images/signature.png" alt="Elizabeth Slonaker Portfolio - Logo"></a>
           </div>
-
           <nav>
             <ul>
               <li><a href="index.html" class="active">Work</a></li>
-              <li class="middle"><a href="resume.html">Resume</a></li>
-              <li><a href="about.html">About</a></li>
+              <li><a href="resume.html">Resume</a></li>
+              <li><a href="about.html">About + Contact</a></li>
             </ul>
           </nav>
         </header>
 
-        <div class="mobileNav">
-          <div class="logo">
-            <a href="index.html"><img src="images/signature.png" alt="Elizabeth Slonaker Portfolio - Logo"></a>
-          </div>
-          <div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-            <div id="myLinks">
-              <a href="index.html" class="active">Work</a>
-              <a href="resume.html">Resume</a>
-              <a href="about.html">About</a>
-            </div>
-
-          </div>
-        </div>
-
-
-
         <main>
+          <div class="logo-mobile">
+            <a href="index.html"><img src="images/signature.png" alt="Elizabeth Slonaker Portfolio - Logo" width="20%"></a>
+          </div>
+
           <div class="summary">
-            <h2> <span class="highlight">I'm Elizabeth, a UX/UI Designer / Developer in Fort Worth, Texas.</span> Passionate about both design and code, I create delighful experiences on the web.</h2>
-          </div>
-          <div class="flex-container">
-
-            <div class="col project">
-              <a href="fyr.html"><img src="images/fyr-home-copy.png" alt="Elizabeth Slonaker Project"></a>
-            </div>
-            <div class="col">
-              <h3>Forever Young Records</h3>
-              <p>A redesigned shopping experience to facilitate online sales</p>
-              <ul class="project-links">
-                <li><a href="fyr.html">Case Study</a></li>
-                <li><a href="">Repository</a></li>
-              </ul>
-            </div>
-
-
-
-            <div class="col project">
-              <a href="txrepublic.html"><img src="images/txr.png" alt="Elizabeth Slonaker Project"></a>
-            </div>
-            <div class="col">
-              <h3>Texas Republic</h3>
-              <p>A comprehensive web presence to generate brand engagement and online sales</p>
-              <ul class="project-links">
-                <li><a href="txrepublic.html">Case Study</a></li>
-                <li><a href="">Repository</a></li>
-              </ul>
-            </div>
-
-
-            <div class="col project">
-              <a href="medium.html"><img src="images/medium.png" alt="Elizabeth Slonaker Project"></a>
-            </div>
-            <div class="col">
-              <h3>Medium</h3>
-              <ul class="project-links">
-                <li><a href="medium.html">Case Study</a></li>
-                <li><a href="">Repository</a></li>
-              </ul>
-            </div>
-
+            <h3>UX/UI Designer + Web Developer</h3>
+            <h1>Striving for harmony between design and code, <br>I build things on the web.</h1>
+            <div class="vertical-line"></div>
           </div>
 
+            <div class="project" data-aos="fade-left" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+            <div class="col-7">
+              <a href="foreveryoung.html"><img src="images/fyr-layout.png" alt="Elizabeth Slonaker Project" width="100%"></a>
+            </div>
+            <div class="col-3">
+              <h4><a href="foreveryoung.html">Forever Young Records</a></h4>
+              <h3><a href="foreveryoung.html">A modern shopping experience and CMS to facilitate online sales</a></h3>
+              <ul class="btn-boxShadow">
+                <li><a href="foreveryoung.html" class="btn-primary">Case Study</a></li>
+                <li><a href="https://github.com/elizabethslonaker/foreveryoungrecords" target="_blank">Repository</a></li>
+              </ul>
+            </div>
+            </div>
+
+            <div class="project" data-aos="fade-right" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+            <div class="col-7">
+              <a href="presidential-timeline.html"><img src="images/pt-layout.png" alt="Elizabeth Slonaker Presidential Timeline Project" width="100%"></a>
+            </div>
+            <div class="col-3">
+              <h4><a href="presidential-timeline.html">2020 Presidential Election Timeline</a></h4>
+              <h3><a href="presidential-timeline.html">Microsite to visually represent the presidential election</a></h3>
+              <ul class="btn-boxShadow">
+                <li><a href="presidential-timeline.html" class="btn-primary">Case Study</a></li>
+                <li><a href="http://theshorthorn.com/app/presidentialtimeline/" target="_blank">Live Site</a>
+              </ul>
+            </div>
+          </div>
+
+            <div class="project" data-aos="fade-left" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+            <div class="col-7">
+              <a href="txrepublic.html"><img src="images/txr-layout.png" alt="Elizabeth Slonaker Project" width="100%"></a>
+            </div>
+            <div class="col-3">
+              <h4><a href="txrepublic.html">Texas Republic</a></h4>
+              <h3><a href="txrepublic.html">Online presence to generate brand egagement and sales</a></h3>
+              <ul class="btn-boxShadow">
+                <li><a href="txrepublic.html" class="btn-primary">Case Study</a></li>
+                <li><a href="https://github.com/elizabethslonaker/texasrepublic" target="_blank">Repository</a></li>
+              </ul>
+            </div>
+            </div>
         </main>
         </div>
 
         <footer>
-          <p>Contact / <a href="mailto:elizaslonaker@gmail.com?" class="email highlight">elizaslonaker@gmail.com</a></p>
+          <a href="mailto:elizaslonaker@gmail.com?"><i class="far fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/elizabeth-slonaker" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/elizabethslonaker" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://open.spotify.com/user/elizags_" target="_blank"><i class="fab fa-spotify"></i></a>
         </footer>
+
+        <!-- Mobile Nav -->
+        <div id="sticky-nav">
+          <a href="index.html" class="active"><i class="fas fa-desktop"></i></i><br>Work</a>
+          <a href="about.html"><i class="far fa-user"></i></i><br>About</a>
+          <a href="resume.html"><i class="fas fa-download"></i><br>Resume</a>
+          <a href="contact.html"><i class="far fa-envelope-open fa-lg"></i><br>Contact</a>
+        </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="js/app.js"></script>
+        <!-- AOS.js - animate on scroll library -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init();</script>
     </body>
 </html>
