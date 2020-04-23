@@ -6,19 +6,16 @@
         <meta name="keywords" content="HTML, CSS, XML, Javascript">
         <meta name="author" content="Elizabeth Slonaker">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Elizabeth Slonaker - Portfolio Project</title>
+        <title>Elizabeth Slonaker - Portfolio</title>
         <link rel="stylesheet" type="text/css" href="CSS/styles.css">
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/393e357d21.js" crossorigin="anonymous"></script>
-        <!-- Animate on scroll library (https://michalsnik.github.io/aos/) -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159440295-1"></script>
         <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-159440295-1');</script>
     </head>
 
     <body>
-      <div id="wrapper">
         <header>
           <div class="logo">
             <a href="index.html"><img src="images/signature.png" alt="Elizabeth Slonaker Portfolio - Logo"></a>
@@ -26,154 +23,140 @@
           <nav>
             <ul>
               <li><a href="index.html">Work</a></li>
-              <li><a href="resume.html">Resume</a></li>
-              <li><a href="about.html">About + Contact</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="images/elizabethSlonaker_resume.pdf" target="_blank">Resume</a></li>
             </ul>
           </nav>
         </header>
 
-        <main>
+        <main id="project">
           <div class="logo-mobile">
             <a href="index.html"><img src="images/signature.png" alt="Elizabeth Slonaker Portfolio - Logo"></a>
           </div>
 
-          <img src="images/fyr-layout.png" alt="Forever Young Records Website Redesign Concept" width="100%">
-          <div class="container">
-            <h1>Forever Young Records</h1>
-            <h2>How redesigning the website of a family-owned & operated record store furthers the conversion from in-store to online sales</h2>
-            <ul class="btn-boxShadow btn-projects">
+          <div class="summary">
+            <h3><span class="highlight"> Forever Young Records </span></h3>
+            <h1>Redesigned shopping experience and CMS for local record store</h1>
+            <ul class="btn-index btn-projects">
               <li><a href="http://ctec4321.egs3925.uta.cloud/fyr/shop.php" target="_blank" class="btn-primary">View Site</a></li>
-              <li><a href="https://github.com/elizabethslonaker/foreveryoungrecords" target="_blank">Repository</a></li>
+              <li><a href="https://github.com/elizabethslonaker/foreveryoungrecords" target="_blank" class="btn-primary">Repository</a></li>
             </ul>
           </div>
 
-          <div class="container" data-aos="fade-right" data-aos-duration="1500">
+        <img src="images/fyr-layout.png" alt="Forever Young Records Website Redesign Concept" width="100%">
+
+        <div class="container">
+          <h2><span class="num">01</span> Brief</h2>
           <div class="flex-container">
-            <div class="col">
-              <h2>Overview</h2>
-              <p>Forever Young Records is a family owned and operated record store. As one of the few independent record stores left in the DFW metroplex, their mission is to offer a large selection of high quality music at reasonable costs. They sell over 250,000 items from new releases to classics, in various genres and formats. </p>
-              <p>*This is a website redesign concept for a course project.</p>
+            <div class="col-7">
+              <p>Forever Young Records is a family owned and operated independent record store in Grand Prairie, TX. Their mission is to offer a large selection of high quality music at reasonable costs. They sell over 250,000 items from new releases to classics, in various genres and formats. </p>
+              <h4>Objectives</h4>
+              <ul>
+                <li>Improve the online shopping experience</li>
+                <li>Develop a CMS for managing inventory efficiently</li>
+              <h4>Results</h4>
+              <ul>
+                <li>Search bar</li>
+                <li>Filtering products </li>
+                <li>Product catalog management (CMS)</li>
+              </ul>
             </div>
-            <div class="col">
-              <h2>Scope</h2>
-              <ul class="dashed-list">
+            <div class="col-3">
+              <h4>Scope</h4>
+              <ul>
                 <li>Market Research</li>
-                <li>User Personas & User Flows</li>
-                <li>Sitemap & Wireframes</li>
+                <li>Personas</li>
+                <li>User Flows</li>
+                <li>Sitemap</li>
+                <li>Wireframes</li>
                 <li>Visual Design</li>
                 <li>Functional Requirements & Specs</li>
                 <li>Usability Assessment</li>
                 <li>Front-End Development</li>
-                <li>MySQL Database</li>
-                <li>Content Management System</li>
+                <li>MySQL Database Development</li>
+              </ul>
+              <h4>Timeframe</h4>
+              <ul>
+                <li>2 months</li>
               </ul>
             </div>
           </div>
+        </div>
 
-          <div class="flex-container">
-            <div class="col">
-              <h2>Objectives</h2>
-              <ul class="dashed-list">
-                <li>Improve the usability of the online shopping experience</li>
-                <li>Implement Content Management System to manage inventory</li>
-              </ul>
-            </div>
-            <div class="col">
-              <h2>Results</h2>
-              <ul class="dashed-list">
-                <li>Functional search bar</li>
-                <li>Filtering products </li>
-                <li>Admin login system</li>
-                <li>Product catalog management (CMS)</li>
-              </ul>
-            </div>
-          </div>
-          </div>
 
-          <div class="container" data-aos="fade-left" data-aos-duration="1500">
-          <h2>Challenges</h2>
-          <p>Forever Young Records is in a transition phase. Their online store has greatly widened their clientele and online presence, in comparison to their previous local reach in the DFW community. Therefore, they are well positioned to grow online revenues. </p>
-          <p>I identified the following usability issues with the current site. These issues led me to identify areas of opportunity within the shopping experience, to improve usability and user flow.</p>
-          <ul class="dashed-list">
-            <li>The Homepage
-              <p>Products aren’t listed. This makes it hard for customers to quickly browse, especially when they don’t know what they’re looking for. This increases the bounce rate.</p>
-            </li>
-            <li>The Search Bar
-              <p>Imagine this - You recently purchased a record player and you need to buy some vinyl. You want to see all available vinyl, regardless of artist. However, the site requires that you type in an artist or title first, the opposite of your goal. You leave the site. </p>
-              <p>This scenario highlights a key issue with the current search feature. The search bar requires a user to search for a keyword, before filtering the results by genre, format, etc.</p>
-            </li>
-            <li>The Product Page
-              <p>The product page is missing a product image. This is an important factor in a customer’s decision to purchase. Customers want to see what they’re buying.</p>
-              <p>There is too much information for the viewer to digest, making the visual hierarchy unclear. Notably, the “Add to Cart” button isn’t styled and hard to locate.</p>
-            </li>
-          </ul>
+          <div class="container">
+          <h2><span class="num">02</span> Understanding the Challenge</h2>
+          <p>Forever Young Records is in a transition phase. </p>
+          <p>The demand for an online presence continues to increase as their clientele base spreads past the local community. To support this growth in online customers, I identified some usability issues with their current site and shopping experience. I sought to solve these issues with my redesign.</p>
+
+          <h3>The Homepage</h3>
+              <p>Products aren’t listed. Difficult for customers to quickly browse, especially when they don’t know what they’re looking for. Increases bounce rate (poor SEO).</p>
+
+            <h3>The Search Bar</h3>
+              <p>Imagine this - You recently purchased a record player and you need to buy some vinyl. You want to see all available vinyl, regardless of artist. However, the current site requires that you type in an artist or title first - the opposite of your goal. You leave the site. </p>
+              <p>The scenario above highlights a key issue with the site's current searchability. A user must first search for a artist or title, <i>before</i> filtering the results by genre or format. <span class="highlight">The problem is that the user must know what they want to buy, before coming to the site.</span></p>
+
+            <h3>The Product Page</h3>
+              <p>Missing product image, an important factor in a customer’s decision to purchase. Customers want to see what they’re buying.</p>
+              <p>Too much information for the viewer to digest, makes the objective hierarchy unclear.</p>
+              <p>“Add to Cart” button is difficult to locate.</p>
+
           </div>
 
-          <div class="container" data-aos="fade-right" data-aos-duration="1500">
-            <h2>Target Audience</h2>
+          <div class="container">
+            <h2><span class="num">03</span> Personas</h2>
             <p>The target audience is men and women between the ages of 24 - 60.</p>
-          </div>
-          <div class="container" data-aos="fade-left" data-aos-duration="1500">
-            <h2>User Personas</h2>
             <div class="flex-container">
               <div class="col-3">
+                <img src="images/fyr-millennial.png" alt="Forever Young Records Persona" class="headshot">
                 <h3>The Millennial *</h3>
-
-                <ul class="dashed-list">
+                <ul>
                   <li>Tech-savy</li>
-                  <li>Most likely to convert to online shopping</li>
+                  <li>Most likely to shop online</li>
                   <li>Site Goal: Find recently released and classic records at affordable prices</li>
                   <li>Site Needs: Modern, online shopping experience</li>
+                  <li>*According to Fortune Magazine, 50% of vinyl buyers are 18-34 years old</li>
                 </ul>
-                <p>*According to Fortune Magazine, 50% of vinyl buyers are 18-34 years old</p>
               </div>
               <div class="col-3">
+                <img src="images/fyr-oldsoul.png" alt="Forever Young Records Persona" class="headshot">
                 <h3>The Old Soul</h3>
-
-                <ul class="dashed-list">
-                  <li>Independent, knowledgeable, introspective, and nostalgic</li>
-                  <li>Enjoys tangible items</li>
-                  <li>More likely to visit the store than shop online</li>
+                <ul>
+                  <li>Independent, knowledgeable, introspective, nostalgic</li>
+                  <li>Likes tangible items, more likely to visit the store than shop online</li>
+                  <li>Site Needs: See store hours</li>
                 </ul>
               </div>
               <div class="col-3">
+                <img src="images/dd-man.png" alt="Forever Young Records Persona" class="headshot">
                 <h3>The Collector</h3>
-
-                <ul class="dashed-list">
-                  <li>Patient, resourceful, and diligent</li>
-                  <li>Site Goal: Find specific items, often rare or limited edition products, in good to mint condition</li>
-                  <li>Site Needs: Highly detailed search filters</li>
+                <ul>
+                  <li>Patient, resourceful, diligent</li>
+                  <li>Site Goal: Find specific items, often rare or limited edition, in good to mint condition</li>
+                  <li>Site Needs: Detailed search filters</li>
                 </ul>
               </div>
             </div>
           </div>
 
-          <div class="container" data-aos="fade-right" data-aos-duration="1500">
-            <h2>Sitemap</h2>
-            <img src="images/fyr-sitemap.png" alt="Sitemap" width="100%">
+          <div class="container">
+            <h2><span class="num">04</span> Sitemap</h2>
+            <img src="images/fyr-sitemap.png" alt="Forever Young Records Sitemap" width="100%">
           </div>
 
-          <div class="container" data-aos="fade-left" data-aos-duration="1500">
-            <h2>Wireframes<br><span class="tag">Low-fidelity</span></h2>
-            <img src="images/fyr-wireframe.png" alt="Low-fidelity Wireframes" width="100%">
+          <div class="container">
+            <h2><span class="num">05</span> Wireframes<br><span class="tag">Low-fidelity</span></h2>
           </div>
+          <img src="images/fyr-wireframe.png" alt="Forever Young Records Low-fidelity Wireframes" width="100%">
 
-          <div class="container" data-aos="fade-right" data-aos-duration="1500">
-          <h2>Visual Design<br><span class="tag">Stylescapes</span></h2>
+          <div class="container">
+          <h2><span class="num">06</span> Visual Design<br><span class="tag">"Fresh & Funky" Stylescape</span></h2>
             <p>Originally inspired by designs from the 70s and 80s, I decided to avoid over representing a single decade or design trend. Instead, I selected a bright dual color palette inspired by their current blue and yellow logo. A “handwritten” font for the headings gives the design a personal and nostalgic feeling, which reflects the customer’s attitude towards the brand.</p>
-            <div class="stylescapes">
-              <h3>1. La la land</h3>
-              <img src="images/fyr-stylescape-1.png" alt="Stylescape 1 - Distressed Texas" width="75%">
-              <h3>2. Fresh & Funky</h3>
-                <img src="images/fyr-stylescape-2.png" alt="Stylescape 2 - The Modern Cowboy" width="75%">
-                <img src="images/circle.png" alt="Circle" class="drawn-circle" width="100%">
-              <h3>3. 70s Retro</h3>
-                <img src="images/fyr-stylescape-3.png" alt="Stylescape 3 - Stockyard Culture" width="75%">
-            </div>
           </div>
+          <br><img src="images/fyr-stylescape.png" alt="Forever Young Records Stylescape - Fresh & Funky" width="100%">
 
-          <div class="container" data-aos="fade-left" data-aos-duration="1500">
-            <h2>Functional Requirements<br><span class="tag">Feature #3: Product Catalog</span></h2>
+          <div class="container">
+            <h2><span class="num">07</span> Functional Requirements<br><span class="tag">Feature #3: Product Catalog</span></h2>
             <table>
              <tr><th>#</th><th>Need</th><th>Title</th><th>Description</th></tr>
              <tr><td>1.1</td><td>Help customers find products </td><td>Search </td><td>The website shall allow customers to search the catalogue and query the database with multiple requests.</td></tr>
@@ -201,25 +184,25 @@
             </table>
           </div>
 
-          <div class="container" data-aos="fade-right" data-aos-duration="1500">
-            <h2>Mapping Client Flow<br><span class="tag">Feature #3: Product Catalog</span></h2>
+          <div class="container">
+            <h2><span class="num">08</span> Mapping Client Flow<br><span class="tag">Feature #3: Product Catalog</span></h2>
             <p>The client will be able to add new products and edit and delete existing products. The following user flow maps the client's journey from opening the product catalog, to displaying all the items stored in the database.</p>
-            <a href="images/fyr-client-flowchart.png"><img src="images/fyr-client-flowchart.png" alt="Client Flowchart" width="100%"></a>
           </div>
+          <img src="images/fyr-client-flowchart.png" alt="Forever Young Records Client Flowchart" width="100%">
 
-          <div class="container" data-aos="fade-left" data-aos-duration="1500">
-            <h2>Mapping Customer Flow<br><span class="tag">Feature #3: Product Catalog</span></h2>
+          <div class="container">
+            <h2><span class="num">09</span> Mapping Customer Flow<br><span class="tag">Feature #3: Product Catalog</span></h2>
             <p>The customer will be able to browse and search the catalog. The following user flow maps the customer's journey from opening the catalog, to displaying a selected item.</p>
-            <a href="images/fyr-customer-flowchart.png"><img src="images/fyr-customer-flowchart.png" alt="Customer Flowchart" width="100%"></a>
           </div>
+          <img src="images/fyr-customer-flowchart.png" alt="Forever Young Records Customer Flowchart" width="100%">
 
-          <div class="container" data-aos="fade-right" data-aos-duration="1500">
-            <h2>Developing 3 Features<br><span class="tag">Search Bar, Filters, Content Management System</span></h2>
-              <h3>1. Functional Search Bar</h3>
+          <div class="container">
+            <h2><span class="num">10</span> Searching, Filtering, CMS<br><span class="tag">Developing 3 Database-Supported Features</span></h2>
+              <br><h3>1. Functional Search Bar</h3>
               <div class="flex-container">
                 <div class="box">
                   <p>Step 1</p>
-                  <p>User searches for an Artist, Title, or Barcode</p>
+                  <p>User searches an Artist, Title, or Barcode</p>
                 </div>
                 <div class="box">
                   <p>Step 2</p>
@@ -227,19 +210,19 @@
                 </div>
                 <div class="box">
                   <p>Step 3</p>
-                  <p>Displays product(s)</p>
+                  <p>Website displays product(s)</p>
                 </div>
               </div>
-              <h4><b>OBJECTIVE #1: </b>Improve usability of the online shopping experience</h4>
-                <p>The newly developed search bar improves the shopping experience by allowing the user to independently search for items, without having to select a specific filter or category first. In the visual hierarchy, the search bar is top and center, meant to encourage site visitors to use it. The home page displays products upon page load, making quick browsing much easier than before. </p>
-                <img src="demos/fyr-search.gif" class="gif" alt="Search Function Demo Gif">
-                <figcaption>Demo of search bar function</figcaption>
+              <h4>Objective #1: Improve the online shopping experience</h4>
+                <p>This redesigned search bar improves the shopping experience by allowing the user to independently search for items, without having to select a specific category first. In the visual hierarchy, the search bar is positioned at the top. The home page displays products upon page load, making quick browsing much easier than before. </p>
+                <img src="demos/fyr-search.gif" class="gif" alt="Forever Young Records Search Function Demo Gif">
+                <figcaption>Demo of search bar function - searching for The Beatles</figcaption>
 
-              <h3>2. Highly Customized Filters</h3>
+              <br><h3>2. Highly Customized Filters</h3>
               <div class="flex-container">
                 <div class="box">
                   <p>Step 1</p>
-                  <p>Users filter products by Genre, Format, or Quality. These filters can be combined.</p>
+                  <p>User filters by Genre, Format, or Quality. Filters can be combined.</p>
                 </div>
                 <div class="box">
                   <p>Step 2</p>
@@ -247,17 +230,14 @@
                 </div>
                 <div class="box">
                   <p>Step 3</p>
-                  <p>Displays product(s)</p>
+                  <p>Website displays product(s)</p>
                 </div>
               </div>
-              <h4><b>OBJECTIVE #1:</b> Improve usability of the online shopping experience </h4>
-              <p></p>
-              <img src="demos/fyr-filters.gif" class="gif" alt="Search Filters Demo Gif">
-              <figcaption>Demo of filtering products </figcaption>
-
-              <h3>3. Managing the Product Catalog</h3>
-                <p></p>
-                <p></p>
+              <h4>Objective #1: Improve usability of the online shopping experience </h4>
+                <p>This redesigned filtering system improves the shopping experience by allowing users to filter all products in the catalog, independent from the search bar. This was an issue with the old site, which required users to search for an artist or title <i>before</i> applying filters. </p>
+              <img src="demos/fyr-filters.gif" class="gif" alt="Forever Young Records Search Filters Demo Gif">
+              <figcaption>Demo of filtering products - Pop, Vinyl LP</figcaption>
+              <br><h3>3. Managing Products (CMS)</h3>
                 <div class="flex-container">
                   <div class="box">
                     <p>Step 1</p>
@@ -265,92 +245,102 @@
                   </div>
                   <div class="box">
                     <p>Step 2</p>
-                    <p>Admin can manage the entire catalog: add new products, edit products, delete products</p>
+                    <p>All products stored in the mySQL Database are retrieved</p>
+                  </div>
+                  <div class="box">
+                    <p>Step 3</p>
+                    <p>Admin can add new products, edit existing products, or delete products</p>
                   </div>
                 </div>
-                <h4><b>OBJECTIVE #2:</b> Implement Content Management System to manage inventory</h4>
-                <p></p>
-                <img src="demos/fyr-admin.gif" class="gif" alt="Content Management System Demo Gif">
-                <figcaption>Demo of managing the product catalog</figcaption>
+                <h4>Objective #2: Implement a Content Management System to manage inventory</h4>
+                  <p>The newly developed CMS allows the client to quickly manage all products directly from their website. The client can interact with a database without knowing a line of code. This guarantees a smooth handoff of the website to the client.</p>
+                <img src="demos/fyr-admin.gif" class="gif" alt="Forever Young Records Content Management System Demo Gif">
+                <figcaption>Demo of managing the product catalog - <br>Logging into the CMS and adding a new product</figcaption>
               </div>
 
-            <div class="container" data-aos="fade-left" data-aos-duration="1500">
-            <h2>Usability Assessment</h2>
-            <p>Two weeks before the completion of the redesign concept, I conducted an assessment to test the usability of the search bar and product catalog management.</p>
-            <h3>Questions Addressed by Assessment</h3>
-            <ol>
-              <li>Will the users easily find the search bar in its present location?</li>
-              <li>Can users easily navigate to the login admin page?</li>
-              <li>Will the users easily find the button to upload an image, and know how to navigate back to the product catalog?</li>
-            </ol>
-            <p>I gave the following two scenarios and tasks to the users to perform. The hesitation time for each task, the amount of incorrect searches, incorrect clicks, and approximate time it took to complete each task was recorded.</p>
+            <div class="container">
+            <h2><span class="num">11</span> Usability Assessment</h2>
+            <p>Two weeks before the completion of the final site, I conducted an assessment to test the usability of the search bar and product CMS.</p>
+            <h3>Questions Addressed by Assessment </h3>
+              <p>1. Will the users easily find the search bar in its present location?</p>
+              <p>2. Can users easily navigate to the login admin page?</p>
+              <p>3. Will the users easily find the button to upload an image, and know how to navigate back to the product catalog?</p>
+            <br><p>I gave the following scenarios and tasks for the user to perform. The hesitation time for each task, incorrect searches, incorrect clicks, and approximate time it took to complete each task was recorded.</p>
             <h3>Scenario 1</h3>
-            <ol>
-              <li>Search for “The Beatles” in the search bar.</li>
-              <li>Go to the admin login page and enter the following credentials into the form. </li>
-              <li>Locate the Beatles item from the list and navigate to the edit page. Change the price of the item to .99 cents and submit the new product details. </li>
-              <li>Do not log out! Please proceed to scenario 2.</li>
-            </ol>
+              <p>1. Type “The Beatles” into the search bar.</p>
+              <p>2. Go to the admin login page and enter the following credentials into the form. </p>
+              <p>3. Locate the Beatles item from the list and navigate to the edit page. Change the price of the item to .99 cents and submit the new product details. </p>
+              <p>4. Do not log out! Please proceed to scenario 2.</p>
             <h3>Scenario 2</h3>
-            <ol>
-              <li>Choose any product and proceed to the edit form.</li>
-              <li>Upload a new image of your choice to be the product image.  </li>
-              <li>Return to the complete list of products. </li>
-            </ol>
+              <p>1. Choose any product and proceed to the edit form.</p>
+              <p>2. Upload a new image of your choice to be the product image.  </p>
+              <p>3. Return to the complete list of products. </p>
             <h3>Issues Observed</h3>
-            <ol>
-              <li>Search for “beatles” did not come up</li>
-              <li>Delayed response when trying to locate the admin login</li>
-              <li>Confused on how to return to product listing page after editing a product</li>
-              <li>Confused on how to return to product listing page after uploading an image </li>
-            </ol>
+              <p>1. Search for “beatles” did not come up</p>
+              <p>2. Delayed response when trying to locate the admin login</p>
+              <p>3. Confused on how to return to product listing page after editing a product</p>
+              <p>4. Confused on how to return to product listing page after uploading an image </p>
             <h3>Analysis</h3>
-            <p>The admin login link was moved from the top right corner, to the primary navigation. It was too small for the users to find with hesitation. A lock icon was added to differentiate this link from the rest of the main links. </p>
-            <p>The search bar parameters were changed to accept searches with keywords like a product’s title, artist, or barcode. Now, individual searches for “Beatles” or “The Beatles” will yield the same results.</p>
-            <p>A direct link to the product listing was added to the success message after the user edits a product or uploads a product image.</p>
+            <p>The admin link is too small. Users found after moments of hesitation. Move this link from the top right corner to the primary navigation. Add a lock icon to differentiate this link from the rest of the main links. </p>
+            <p>Change search bar parameters to accept searches with keywords <l>like</l> a product’s title, artist, or barcode. Searching for “Beatles” and “The Beatles” should yield the same results.</p>
+            <p>Once the client successfully adds or edits a product, display a link to the product listing page in the success message. Client needs to know how to get back to the main admin page.</p>
           </div>
 
-          <h2>Results</h2>
+          <br><br><br><br>
+          <h2><span class="num">12</span> Results</h2><br><br>
           <div class="flex-container">
             <div class="col">
-              <img src="images/fyr_shop.png" width="100%" alt="">
-              <figcaption>Shopping page with working search bar and filters</figcaption>
+              <a href="images/fyr_shop.png"><img src="images/fyr_shop.png" width="100%" alt="Forever Young Records Redesign Shopping Page"></a>
+                <figcaption>Shopping page with working search bar and filters</figcaption>
             </div>
             <div class="col">
-              <img src="images/fyr_admin_login.png" width="100%" alt="">
-              <figcaption>Login for a content management system (CMS)</figcaption><br>
-              <img src="images/fyr_admin_productList.png" width="100%" alt="">
-              <figcaption>CMS allows admin to add, edit, and delete products</figcaption>
+              <a href="images/fyr_admin_login.png"><img src="images/fyr_admin_login.png" width="100%" alt="Forever Young Records Redesign Login Page"></a>
+                <figcaption>Login for a content management system (CMS)</figcaption><br>
+                <a href="images/fyr_admin_productList.png"><img src="images/fyr_admin_productList.png" width="100%" alt="Forever Young Records Redesign Product List Page"></a>
+                <figcaption>CMS allows admin to add, edit, and delete products</figcaption>
             </div>
           </div>
 
-          <ul class="btn-boxShadow btn-projects">
+          <ul class="btn-index btn-projects">
             <li><a href="http://ctec4321.egs3925.uta.cloud/fyr/shop.php" target="_blank" class="btn-primary">View Site</a></li>
-            <li><a href="https://github.com/elizabethslonaker/foreveryoungrecords" target="_blank">Repository</a></li>
+            <li><a href="https://github.com/elizabethslonaker/foreveryoungrecords" target="_blank" class="btn-primary">Repository</a></li>
           </ul>
 
+          <div class="container">
+            <h2>Reflection</h2>
+              <p>This is my first time using SQL to build a back-end database. I experimented, debugged, and generated many failed queries. <span class="highlight">I had to overcome the fear of breaking the code, which improved my coding skills exponentially.</span> I'm proud of the final product, and I'm excited to use these new skils to breathe life into my future designs.</p>
+          </div>
+
+          <div class="container">
+            <h2>View More Projects</h2>
+            <br><div class="flex-container">
+              <div class="col">
+                <a href="distinguish-detail.html"><img src="images/dd-layout.png" alt="Elizabeth Slonaker Project" width="100%">
+                <p class="tag">Branding, website, & CMS for a mobile car wash</p></a>
+              </div>
+              <br><div class="col">
+                <a href="presidential-timeline.html"><img src="images/pt.jpg" alt="Elizabeth Slonaker Project" width="100%">
+                <p class="tag">Visualizing the 2020 presidential election</p></a>
+              </div>
+            </div>
+          </div>
+
         </main>
-        </div>
 
         <footer>
-          <a href="mailto:elizaslonaker@gmail.com?"><i class="far fa-envelope"></i></a>
+          <h1><a href="mailto:elizaslonaker@gmail.com?">elizaslonaker@gmail.com</a></h1>
           <a href="https://www.linkedin.com/in/elizabeth-slonaker" target="_blank"><i class="fab fa-linkedin-in"></i></a>
           <a href="https://github.com/elizabethslonaker" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://open.spotify.com/user/elizags_" target="_blank"><i class="fab fa-spotify"></i></a>
         </footer>
 
         <!-- Mobile Nav -->
         <div id="sticky-nav">
           <a href="index.html"><i class="fas fa-desktop"></i></i><br>Work</a>
           <a href="about.html"><i class="far fa-user"></i></i><br>About</a>
-          <a href="resume.html"><i class="fas fa-download"></i><br>Resume</a>
+          <a href="images/elizabethSlonaker_resume.pdf" download target="_blank"><i class="fas fa-download"></i><br>Resume</a>
           <a href="contact.html"><i class="far fa-envelope-open fa-lg"></i><br>Contact</a>
         </div>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="js/app.js"></script>
-        <!-- AOS.js - animate on scroll library -->
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>AOS.init();</script>
     </body>
 </html>
