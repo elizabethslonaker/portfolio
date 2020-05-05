@@ -8,8 +8,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Elizabeth Slonaker - Portfolio</title>
         <link rel="stylesheet" type="text/css" href="CSS/styles.css">
-        <!-- Font Awesome -->
-        <script src="https://kit.fontawesome.com/393e357d21.js" crossorigin="anonymous"></script>
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <!-- Emojis -->
+        <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159440295-1"></script>
         <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-159440295-1');</script>
@@ -17,108 +19,172 @@
 
     <body>
         <header>
-          <div class="logo">
-            <a href="index.html"><img src="images/signature.png" alt="Elizabeth Slonaker Portfolio - Logo"></a>
-          </div>
+          <div><a href="index.html" class="logo">ES</a></div>
           <nav>
             <ul>
               <li><a href="index.html" class="active">Work</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="images/elizabethSlonaker_resume.pdf" target="_blank">Resume</a></li>
+              <li><a href="mailto:elizaslonaker@gmail.com?"><span class="ec ec-envelope-with-arrow"></span></a></li>
             </ul>
           </nav>
         </header>
 
-        <main id="index">
-          <div class="logo-mobile">
-            <a href="index.html"><img src="images/signature.png" alt="Elizabeth Slonaker Portfolio - Logo" width="20%"></a>
+        <main>
+          <div class="wrapper">
+            <!--<h3>UX/UI Designer + Front End Web Developer</h3>-->
+            <h1 class="headline"> <em>Designer</em> who codes, <br> <em>Coder</em> who designs </h1>
+            <!--<h2><em>Elizabeth specializes in UX/UI + web development</em></h2>-->
+
+
+            <!--<h1>Hello! I'm Elizabeth, a UX/UI Designer + Front End Web Developer.</h1>
+            <a href="mailto:elizaslonaker@gmail.com?"><span class="ec ec-envelope-with-arrow"></span>elizaslonaker@gmail.com</a>-->
           </div>
 
-          <div class="summary">
-            <h3><span class="highlight"></span></h3>
-            <h1>Hello, my name is Elizabeth and I'm a UX/UI designer + front-end web developer in TX.</h1>
-            <a href="mailto:elizaslonaker@gmail.com?"><i class="far fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/elizabeth-slonaker" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com/elizabethslonaker" target="_blank"><i class="fab fa-github"></i></a>
+          <!-- Filtering buttons -->
+          <div id="btnFilterContainer">
+            <!--<button class="btn-filter" onclick="filterSelection('all')"> All <sup>5</sup></button>-->
+            <button class="btn-filter activeFilter" onclick="filterSelection('caseStudy')"> Case Study <sup>3</sup></button>
+            <button class="btn-filter" onclick="filterSelection('design')"> Design Gallery <sup>4</sup></button>
+            <button class="btn-filter" onclick="filterSelection('frontend')"> Frontend <sup>2</sup></button>
+            <button class="btn-filter" onclick="filterSelection('backend')"> Backend <sup>1</sup></button>
           </div>
 
-          <div class="flex-container project-container">
-            <div class="col">
-              <div class="project">
-                <a href="foreveryoung.html"><img src="demos/fyr-filters.gif" alt="Elizabeth Slonaker Project" width="100%">
-                <h4>UX/UI, Front-End, Back-End</h4>
-                <h3>Improving the  shopping experience of a family-owned record store</h3></a>
-                <ul class="btn-index">
-                  <li><a href="foreveryoung.html" class="btn-primary">Case Study</a></li>
-                  <li><a href="https://github.com/elizabethslonaker/foreveryoungrecords" target="_blank" class="btn-primary">Repository</a></li>
-                </ul>
-              </div>
+
+
+          <!-- CASE STUDY -->
+          <div class="flex-container wrapper">
+            <div class="col project filterDiv caseStudy">
+              <a href="foreveryoung.html"><img src="demos/fyr-filters.gif" alt="Elizabeth Slonaker Project" width="100%">
+              <p><span class="highlight">UX/UI, Frontend, Backend</span></p>
+              <h3>Improving the shopping experience of a record store</h3></a>
+              <!--<ul class="btn-index">
+                <li><a href="foreveryoung.html" class="btn-primary">Case Study</a></li>
+                <li><a href="https://github.com/elizabethslonaker/foreveryoungrecords" target="_blank" class="btn-primary">Repository</a></li>
+              </ul>-->
             </div>
 
-            <div class="col">
-              <div class="project">
-                  <a href="distinguish-detail.html"><img src="images/dd-layout.png" alt="Elizabeth Slonaker Project" width="100%">
-                  <h4>UX/UI, Front-End, Back-End</h4>
-                  <h3>Branding, website, & CMS for a mobile car wash</h3></a>
-                  <ul class="btn-index">
-                    <li><a href="distinguish-detail.html" class="btn-primary">Case Study</a></li>
-                    <!--<li><a href="https://github.com/elizabethslonaker/" target="_blank" class="btn-primary">Repository</a></li>-->
-                  </ul>
-              </div>
+            <div class="col project filterDiv caseStudy">
+              <a href="distinguish-detail.html"><img src="images/dd-layout.png" alt="Elizabeth Slonaker Project" width="100%">
+              <p><span class="highlight">UX/UI, Branding, Frontend, Backend</span></p>
+              <h3>Branding & website for a mobile car wash</h3></a>
+              <!--<ul class="btn-index">
+                <li><a href="distinguish-detail.html" class="btn-primary">Case Study</a></li>
+                <li><a href="https://github.com/elizabethslonaker/" target="_blank" class="btn-primary">Repository</a></li>
+              </ul>-->
             </div>
 
-            <div class="col">
-              <div class="project">
-                <a href="presidential-timeline.html"><img src="images/pt.jpg" alt="Elizabeth Slonaker Presidential Timeline Project" width="100%">
-                <h4>Web Design, Development</h4>
-                <h3>Visualizing the 2020 presidential election</h3></a>
-                <ul class="btn-index">
-                  <li><a href="presidential-timeline.html" class="btn-primary">View</a></li>
-                  <li><a href="http://theshorthorn.com/app/presidentialtimeline/" target="_blank" class="btn-primary">Live Site</a>
-                </ul>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="project">
-                <a href="txrepublic.html"><img src="images/txr-layout.png" alt="Elizabeth Slonaker Project" width="100%">
-                <h4>UX/UI, Front-End, Back-End</h4>
-                <h3>Online presence to generate brand egagement and sales</h3></a>
-                <ul class="btn-index">
-                  <li><a href="txrepublic.html" class="btn-primary">Case Study</a></li>
-                  <li><a href="https://github.com/elizabethslonaker/texasrepublic" target="_blank" class="btn-primary">Repository</a></li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="project">
-                <a href="housing-guide.html"><img src="images/hg.png" alt="Elizabeth Slonaker Presidential Timeline Project" width="100%">
-                <h4>Web Design, Development</h4>
-                <h3>Landing page for university housing fair</h3></a>
-                <ul class="btn-index">
-                  <li><a href="housing-guide.html" class="btn-primary cursor-wand">View</a></li>
-                  <li><a href="http://theshorthorn.com/app/2020housingedition/" target="_blank" class="btn-primary cursor-wand">Live Site</a>
-                </ul>
-              </div>
+            <div class="col project filterDiv caseStudy">
+              <a href="txrepublic.html"><img src="images/txr-layout.png" alt="Elizabeth Slonaker Project" width="100%">
+              <p><span class="highlight">UX/UI, Frontend</span></p>
+              <h3>Online presence to generate brand egagement and sales</h3></a>
+              <!--<ul class="btn-index">
+                <li><a href="txrepublic.html" class="btn-primary">Case Study</a></li>
+                <li><a href="https://github.com/elizabethslonaker/texasrepublic" target="_blank" class="btn-primary">Repository</a></li>
+              </ul>-->
             </div>
           </div>
-        </main>
 
-        <footer>
-          <h1><a href="mailto:elizaslonaker@gmail.com?">elizaslonaker@gmail.com</a></h1>
-          <a href="https://www.linkedin.com/in/elizabeth-slonaker" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://github.com/elizabethslonaker" target="_blank"><i class="fab fa-github"></i></a>
+          <!-- DESIGN GALLERY -->
+          <div class="flex-container wrapper">
+            <div class="col filterDiv design">
+              <ul class="tags"><li>Web Design</li></ul>
+              <img src="images/fwbg-layout.png" alt="Elizabeth Slonaker Project" width="100%">
+              <p>Web design concept for FWBG</p>
+              <br><br><br><br>
+            </div>
+
+            <div class="col filterDiv design">
+              <ul class="tags"><li>Branding</li></ul>
+              <img src="images/dd-styleguide.png" alt="Elizabeth Slonaker Project" width="100%">
+              <p>Visual design guide for a mobile car wash<br><a href="distinguish-detail.html" class="btn-tertiary" target="_blank">Case Study</a></p>
+              <br><br><br><br>
+            </div>
+
+            <div class="col filterDiv  design">
+              <ul class="tags"><li>Logo</li></ul>
+              <img src="images/dd-mockup-paper.png" alt="Elizabeth Slonaker Project" width="100%">
+              <p>Logo mockup for mobile car wash<br><a href="distinguish-detail.html" class="btn-tertiary" target="_blank">Case Study</a></p>
+              <br><br><br><br>
+            </div>
+
+            <div class="col filterDiv design">
+              <ul class="tags"><li>Web Design</li></ul>
+              <img src="images/fyr-layout-2.png" alt="Elizabeth Slonaker Project" width="100%">
+              <p>Web design for record store<br><a href="foreveryoung.html" class="btn-tertiary" target="_blank">Case Study</a></p>
+              <br><br><br><br>
+            </div>
+          </div>
+
+
+          <!-- FRONT-END -->
+          <div class="wrapper filterDiv frontend">
+
+          </div>
+
+          <div class="flex-container wrapper">
+            <div class="col project filterDiv frontend">
+              <a href="presidential-timeline.html" target="_blank"><img src="images/pt.jpg" alt="Elizabeth Slonaker Presidential Timeline Project" width="100%">
+              <ul class="tags"><li>HTML</li> <li>CSS</li> <li>JavaScript</li></ul>
+              <h3>Visualizing the 2020 presidential election</h3></a>
+              <!--<ul class="btn-index">
+                <li><a href="http://theshorthorn.com/app/presidentialtimeline/" target="_blank" class="btn-primary">Website</a>
+                <li><a href="presidential-timeline.html" target="_blank" class="btn-secondary">Read More</a></li>
+              </ul>-->
+            </div>
+
+            <div class="project filterDiv col frontend">
+              <a href="visualization.html" target="_blank"><div id="covid-dots"><div class="circle" style="width:150px; height:150px;"></div></div>
+              <ul class="tags"><li>HTML</li> <li>CSS</li></ul>
+              <h3>Visualizing Data for the COVID-19 Pandemic</h3></a>
+
+              <!--<ul class="btn-index">
+                <li><a href="https://www.theshorthorn.com/coronavirus/covid-19-tracker-see-the-latest-covid-19-numbers-for-arlington-tarrant-county-and-dallas/article_a18591e4-6edf-11ea-98b9-439f60589082.html" target="_blank" class="btn-primary">Website</a></li>
+                <li><a href="visualization.html" target="_blank" class="btn-secondary">Read More</a></li>
+              </ul>-->
+            </div>
+          </div>
+
+
+          <!-- BACK-END -->
+          <div class="flex-container wrapper">
+            <div class="project filterDiv col backend">
+              <ul class="tags"><li>PHP</li> <li>SQL</li> <li>MySQL</li></ul>
+              <h3>Product catalog & CMS for a record store</h3>
+              <!--<ul class="btn-index">
+                <li><a href="http://ctec4321.egs3925.uta.cloud/fyr/shop.php" target="_blank" class="btn-primary">Website</a></li>
+                <li><a href="https://github.com/elizabethslonaker/foreveryoungrecords" target="_blank" class="btn-secondary">Repository</a></li>
+              </ul>-->
+              <img src="demos/fyr-search.gif" alt="Elizabeth Slonaker Project" width="100%">
+              <p>1/3) Built a product catalog inside a MySQL database. Used SQL and PHP to output products for user to search.</p><br>
+              <img src="demos/fyr-filters.gif" alt="Elizabeth Slonaker Project" width="100%">
+              <p>2/3) The user can filter the product catalog by genre, format, and quality.</p><br>
+              <img src="demos/fyr-admin.gif" alt="Elizabeth Slonaker Project" width="100%">
+              <p>3/3) Developed a CMS inside a MySQL database. Built a login system. Admin can manage all items in the products catalog.</p>
+            </div>
+          </div>
+      </main>
+
+        <footer class="flex-container">
+          <div>
+            <h4>Elizabeth Slonaker</h4>
+            <h4>Designer + Developer</h4>
+          </div>
+          <div>
+            <a href="mailto:elizaslonaker@gmail.com?">elizaslonaker@gmail.com</a>
+            <br><a href="https://www.linkedin.com/in/elizabeth-slonaker" target="_blank">LinkedIn</a>
+            <br><a href="https://github.com/elizabethslonaker" target="_blank">GitHub</a>
+          </div>
         </footer>
 
         <!-- Mobile Nav -->
         <div id="sticky-nav">
-          <a href="index.html" class="active"><i class="fas fa-desktop"></i></i><br>Work</a>
-          <a href="about.html"><i class="far fa-user"></i></i><br>About</a>
-          <a href="images/elizabethSlonaker_resume.pdf" download target="_blank"><i class="fas fa-download"></i><br>Resume</a>
-          <a href="contact.html"><i class="far fa-envelope-open fa-lg"></i><br>Contact</a>
+          <a href="index.html" class="active">Work</a>
+          <a href="about.html">About</a>
+          <a href="images/elizabethSlonaker_resume.pdf" download target="_blank">Resume</a>
+          <a href="contact.html">Contact</a>
         </div>
-
+        <!-- Keep script at body to ensure all projects show on load -->
         <script type="text/javascript" src="js/app.js"></script>
     </body>
 </html>

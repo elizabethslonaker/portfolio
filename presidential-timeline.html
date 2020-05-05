@@ -8,8 +8,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Elizabeth Slonaker - Portfolio</title>
         <link rel="stylesheet" type="text/css" href="CSS/styles.css">
-        <!-- Font Awesome -->
-        <script src="https://kit.fontawesome.com/393e357d21.js" crossorigin="anonymous"></script>
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <!-- Emojis -->
+        <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159440295-1"></script>
         <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-159440295-1');</script>
@@ -17,28 +19,22 @@
 
     <body>
         <header>
-          <div class="logo">
-            <a href="index.html"><img src="images/signature.png" alt="Elizabeth Slonaker Portfolio - Logo"></a>
-          </div>
+          <div><a href="index.html" class="logo">ES</a></div>
           <nav>
             <ul>
               <li><a href="index.html">Work</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="images/elizabethSlonaker_resume.pdf" target="_blank">Resume</a></li>
+              <li><a href="mailto:elizaslonaker@gmail.com?"><span class="ec ec-envelope-with-arrow"></span></a></li>
             </ul>
           </nav>
         </header>
 
         <main id="project">
-          <div class="logo-mobile">
-            <a href="index.html"><img src="images/signature.png" alt="Elizabeth Slonaker Portfolio - Logo"></a>
-          </div>
-
-          <div class="summary">
-            <h3><span class="highlight">Web Design/Development</span></h3>
+          <div class="wrapper">
             <h1>Visualizing the Presidential Election of 2020</h1>
-            <div class="btn-index btn-projects">
-              <a href="http://theshorthorn.com/app/presidentialtimeline/" target="_blank" class="btn-primary">View Live Site</a>
+            <div class="btn-index">
+              <a href="http://theshorthorn.com/app/presidentialtimeline/" target="_blank" class="btn-primary">Live Site</a>
             </div>
           </div>
 
@@ -89,8 +85,8 @@
         <h2><span class="num">03</span> Results</h2><br><br>
         <img src="images/pt-layout.png" alt="Final Webpages" width="100%">
 
-        <div class="btn-projects btn-index">
-          <a href="http://theshorthorn.com/app/presidentialtimeline/" target="_blank" class="btn-primary">View Live Site</a>
+        <div class="center btn-index">
+          <a href="http://theshorthorn.com/app/presidentialtimeline/" target="_blank" class="btn-primary">Live Site</a>
         </div>
 
         <div class="container">
@@ -102,33 +98,32 @@
         </div>
 
         <div class="container">
-          <h2>View More Projects</h2>
-          <br><div class="flex-container">
-            <div class="col">
-              <a href="housing-guide.html"><img src="images/hg.png" alt="Elizabeth Slonaker Presidential Timeline Project" width="100%">
-              <p class="tag">Landing page for university housing fair</p></a>
-            </div>
-            <br><div class="col">
-              <a href="foreveryoung.html"><img src="demos/fyr-filters.gif" alt="Elizabeth Slonaker Project" width="100%">
-              <p class="tag">Improving the shopping experience of a family-owned record store</p></a>
-            </div>
+          <h2>Next Project</h2>
+            <br><a href="visualization.html" target="_blank"><div id="covid-dots"><div class="circle" style="width:150px; height:150px;"></div></div>
+            <h4 class="center">Visualizing Data for the COVID-19 Pandemic</h4></a>
           </div>
         </div>
   </main>
 
-  <footer>
-    <h1><a href="mailto:elizaslonaker@gmail.com?">elizaslonaker@gmail.com</a></h1>
-    <a href="https://www.linkedin.com/in/elizabeth-slonaker" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-    <a href="https://github.com/elizabethslonaker" target="_blank"><i class="fab fa-github"></i></a>
+  <footer class="flex-container">
+    <div>
+      <h4>Elizabeth Slonaker</h4>
+      <h4>Designer + Developer</h4>
+    </div>
+    <div>
+      <a href="mailto:elizaslonaker@gmail.com?">elizaslonaker@gmail.com</a>
+      <br><a href="https://www.linkedin.com/in/elizabeth-slonaker" target="_blank">LinkedIn</a>
+      <br><a href="https://github.com/elizabethslonaker" target="_blank">GitHub</a>
+    </div>
   </footer>
 
   <!-- Mobile Nav -->
-<div id="sticky-nav">
-  <a href="index.html"><i class="fas fa-desktop"></i></i><br>Work</a>
-  <a href="about.html"><i class="far fa-user"></i></i><br>About</a>
-  <a href="images/elizabethSlonaker_resume.pdf" download target="_blank"><i class="fas fa-download"></i><br>Resume</a>
-  <a href="contact.html"><i class="far fa-envelope-open fa-lg"></i><br>Contact</a>
-</div>
+  <div id="sticky-nav">
+    <a href="index.html">Work</a>
+    <a href="about.html">About</a>
+    <a href="images/elizabethSlonaker_resume.pdf" download target="_blank">Resume</a>
+    <a href="contact.html">Contact</a>
+  </div>
 
   <script type="text/javascript" src="js/app.js"></script>
 </body>

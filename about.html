@@ -8,8 +8,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Elizabeth Slonaker - About/Contact</title>
         <link rel="stylesheet" type="text/css" href="CSS/styles.css">
-        <!-- Font Awesome -->
-        <script src="https://kit.fontawesome.com/393e357d21.js" crossorigin="anonymous"></script>
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <!-- Emojis -->
+        <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159440295-1"></script>
         <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-159440295-1');</script>
@@ -17,41 +19,37 @@
 
     <body>
         <header>
-          <div class="logo">
-            <a href="index.html"><img src="images/signature.png" alt="Elizabeth Slonaker Portfolio - Logo"></a>
-          </div>
+          <div><a href="index.html" class="logo">ES</a></div>
           <nav>
             <ul>
               <li><a href="index.html">Work</a></li>
               <li><a href="about.html" class="active">About</a></li>
               <li><a href="images/elizabethSlonaker_resume.pdf" target="_blank">Resume</a></li>
+              <li><a href="mailto:elizaslonaker@gmail.com?"><span class="ec ec-envelope-with-arrow"></span></a></li>
             </ul>
           </nav>
         </header>
 
         <main id="about">
-          <div class="logo-mobile">
-            <a href="index.html"><img src="images/signature.png" alt="Elizabeth Slonaker Portfolio - Logo"></a>
-          </div>
+          <div class="wrapper">
+            <h1 class="headline">Intersecting <em>design</em> and <em>code</em>, I make things on the web</h1>
+            <h3><em>Elizabeth specializes in <span class="highlight">UX/UI design</span> and <span class="highlight">web development.</span>  She seeks to thoughtfully bridge the gap between designers and coders. Her work applies psychology and empathy to technology, to create human-centric experiences and delightful solutions. She is based in Texas.</em></h3>
+            <br><h4><span class="ec ec-black-heart"></span>CSS animations and <a href="photo.html" class="btn-tertiary">photography</a></h4>
+            <h4><span class="ec ec-envelope-with-arrow"></span><a href="mailto:elizaslonaker@gmail.com?" class="btn-tertiary">elizaslonaker@gmail.com</a></h4>
+            <br>
+            <!-- <a href="mailto:elizaslonaker@gmail.com?"class="btn-secondary">elizaslonaker@gmail.com</a> -->
 
-          <div class="container">
-            <img src="images/portrait.jpg" alt="Elizabeth Slonaker Portrait by Ken Torne" class="portrait">
-
-            <h2>At the intersection of design and code, I make things on the web.</h2>
-            <p>I'm Elizabeth, a <span class="highlight">UX/UI designer</span> and <span class="highlight">front-end developer</span> in Texas. I have experience as a web developer and am comfortable with server-side script. Through personal study, I have honed my skills as a designer and continue to explore the application of empathy and psychology to technology. With this knowledge, I seek to thoughtfully bridge the gap between designers and developers, and to spark conversations on the web.</p>
-
-            <br><a href="mailto:elizaslonaker@gmail.com?"class="btn-primary">elizaslonaker@gmail.com</a>
             <div class="flex-container">
               <div class="col">
                 <h3>The Designer</h3>
                 <div class="skills">
-                  <div class="circle circle-main"><p>UX/UI</p></div>
+                  <div class="circle"><p class="two-line">User <br>Research</p></div>
                   <div class="circle"><p class="two-line">Information Architecture</p></div>
-                  <div class="circle"><p>Personas</p></div>
-                  <div class="circle"><p>User Flows</p></div>
+                  <div class="circle"><p>Persona</p></div>
+                  <div class="circle"><p>User Flow</p></div>
                   <div class="circle"><p class="two-line">Visual Branding</p></div>
-                  <div class="circle"><p>Wireframes</p></div>
-                  <div class="circle"><p>Prototypes</p></div>
+                  <div class="circle"><p>Wireframe</p></div>
+                  <div class="circle"><p>Prototype</p></div>
                   <div class="circle"><p class="two-line">Responsive Design</p></div>
                   <div class="circle"><p class="two-line">Usability Testing</p></div>
                   <div class="circle"><p>SEO</p></div>
@@ -60,14 +58,12 @@
               <div class="col">
                 <h3>The Developer</h3>
                 <div class="skills">
-                  <div class="circle circle-main"><p>Front-End</p></div>
                   <div class="circle"><p>HTML5</p></div>
                   <div class="circle"><p>CSS3</p></div>
                   <div class="circle"><p>JavaScript</p></div>
                   <div class="circle"><p>jQuery</p></div>
                   <div class="circle"><p>AJAX</p></div>
                   <div class="circle"><p>Bootstrap</p></div>
-                  <div class="circle circle-main"><p>Back-End</p></div>
                   <div class="circle"><p>PHP</p></div>
                   <div class="circle"><p>SQL</p></div>
                   <div class="circle"><p>MySQL</p></div>
@@ -85,29 +81,31 @@
                   <div class="circle"><p>Webflow</p></div>
                 </div>
               </div>
-              <div class="col">
-                <h3>The Hobbyist</h3>
-                <div class="skills">
-                  <div class="circle"><p><a href="photo.html"><i class="fas fa-camera-retro fa-2x"></i></a></p></div>
-                  <div class="circle"><p><a href="https://open.spotify.com/user/elizags_" target="_blank"><i class="fab fa-spotify fa-2x"></i></a></p></div>
-                </div>
-              </div>
             </div>
+            <div class="portrait">
+              <img src="images/portrait.jpg" alt="Elizabeth Slonaker Portrait by Ken Torne">
             </div>
+          </div>
         </main>
 
-        <footer>
-          <h1><a href="mailto:elizaslonaker@gmail.com?">elizaslonaker@gmail.com</a></h1>
-          <a href="https://www.linkedin.com/in/elizabeth-slonaker" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://github.com/elizabethslonaker" target="_blank"><i class="fab fa-github"></i></a>
+        <footer class="flex-container">
+          <div>
+            <h4>Elizabeth Slonaker</h4>
+            <h4>Designer + Developer</h4>
+          </div>
+          <div>
+            <a href="mailto:elizaslonaker@gmail.com?">elizaslonaker@gmail.com</a>
+            <br><a href="https://www.linkedin.com/in/elizabeth-slonaker" target="_blank">LinkedIn</a>
+            <br><a href="https://github.com/elizabethslonaker" target="_blank">GitHub</a>
+          </div>
         </footer>
 
         <!-- Mobile Nav -->
         <div id="sticky-nav">
-          <a href="index.html"><i class="fas fa-desktop"></i></i><br>Work</a>
-          <a href="about.html" class="active"><i class="far fa-user"></i></i><br>About</a>
-          <a href="images/elizabethSlonaker_resume.pdf" download target="_blank"><i class="fas fa-download"></i><br>Resume</a>
-          <a href="contact.html"><i class="far fa-envelope-open fa-lg"></i><br>Contact</a>
+          <a href="index.html">Work</a>
+          <a href="about.html" class="active">About</a>
+          <a href="images/elizabethSlonaker_resume.pdf" download target="_blank">Resume</a>
+          <a href="contact.html">Contact</a>
         </div>
 
         <script type="text/javascript" src="js/app.js"></script>

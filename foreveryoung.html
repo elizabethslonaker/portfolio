@@ -8,8 +8,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Elizabeth Slonaker - Portfolio</title>
         <link rel="stylesheet" type="text/css" href="CSS/styles.css">
-        <!-- Font Awesome -->
-        <script src="https://kit.fontawesome.com/393e357d21.js" crossorigin="anonymous"></script>
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <!-- Emojis -->
+        <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159440295-1"></script>
         <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-159440295-1');</script>
@@ -17,29 +19,23 @@
 
     <body>
         <header>
-          <div class="logo">
-            <a href="index.html"><img src="images/signature.png" alt="Elizabeth Slonaker Portfolio - Logo"></a>
-          </div>
+          <div><a href="index.html" class="logo">ES</a></div>
           <nav>
             <ul>
               <li><a href="index.html">Work</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="images/elizabethSlonaker_resume.pdf" target="_blank">Resume</a></li>
+              <li><a href="mailto:elizaslonaker@gmail.com?"><span class="ec ec-envelope-with-arrow"></span></a></li>
             </ul>
           </nav>
         </header>
 
         <main id="project">
-          <div class="logo-mobile">
-            <a href="index.html"><img src="images/signature.png" alt="Elizabeth Slonaker Portfolio - Logo"></a>
-          </div>
-
-          <div class="summary">
-            <h3><span class="highlight"> Forever Young Records </span></h3>
+          <div class="wrapper">
             <h1>Redesigned shopping experience and CMS for local record store</h1>
-            <ul class="btn-index btn-projects">
-              <li><a href="http://ctec4321.egs3925.uta.cloud/fyr/shop.php" target="_blank" class="btn-primary">View Site</a></li>
-              <li><a href="https://github.com/elizabethslonaker/foreveryoungrecords" target="_blank" class="btn-primary">Repository</a></li>
+            <ul class="btn-index">
+              <li><a href="http://ctec4321.egs3925.uta.cloud/fyr/shop.php" target="_blank" class="btn-primary">Website</a></li>
+              <li><a href="https://github.com/elizabethslonaker/foreveryoungrecords" target="_blank" class="btn-secondary">Repository</a></li>
             </ul>
           </div>
 
@@ -301,9 +297,9 @@
             </div>
           </div>
 
-          <ul class="btn-index btn-projects">
-            <li><a href="http://ctec4321.egs3925.uta.cloud/fyr/shop.php" target="_blank" class="btn-primary">View Site</a></li>
-            <li><a href="https://github.com/elizabethslonaker/foreveryoungrecords" target="_blank" class="btn-primary">Repository</a></li>
+          <ul class="btn-index center">
+            <li><a href="http://ctec4321.egs3925.uta.cloud/fyr/shop.php" target="_blank" class="btn-primary">Website</a></li>
+            <li><a href="https://github.com/elizabethslonaker/foreveryoungrecords" target="_blank" class="btn-secondary">Repository</a></li>
           </ul>
 
           <div class="container">
@@ -312,33 +308,31 @@
           </div>
 
           <div class="container">
-            <h2>View More Projects</h2>
-            <br><div class="flex-container">
-              <div class="col">
-                <a href="distinguish-detail.html"><img src="images/dd-layout.png" alt="Elizabeth Slonaker Project" width="100%">
-                <p class="tag">Branding, website, & CMS for a mobile car wash</p></a>
-              </div>
-              <br><div class="col">
-                <a href="presidential-timeline.html"><img src="images/pt.jpg" alt="Elizabeth Slonaker Project" width="100%">
-                <p class="tag">Visualizing the 2020 presidential election</p></a>
-              </div>
-            </div>
+            <h2>Next Case Study</h2>
+            <br>
+            <a href="distinguish-detail.html"><img src="images/dd-layout.png" alt="Elizabeth Slonaker Project" width="100%">
+            <h4>Branding, website, & CMS for a mobile car wash</h4></a>
           </div>
-
         </main>
 
-        <footer>
-          <h1><a href="mailto:elizaslonaker@gmail.com?">elizaslonaker@gmail.com</a></h1>
-          <a href="https://www.linkedin.com/in/elizabeth-slonaker" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://github.com/elizabethslonaker" target="_blank"><i class="fab fa-github"></i></a>
+        <footer class="flex-container">
+          <div>
+            <h4>Elizabeth Slonaker</h4>
+            <h4>Designer + Developer</h4>
+          </div>
+          <div>
+            <a href="mailto:elizaslonaker@gmail.com?">elizaslonaker@gmail.com</a>
+            <br><a href="https://www.linkedin.com/in/elizabeth-slonaker" target="_blank">LinkedIn</a>
+            <br><a href="https://github.com/elizabethslonaker" target="_blank">GitHub</a>
+          </div>
         </footer>
 
         <!-- Mobile Nav -->
         <div id="sticky-nav">
-          <a href="index.html"><i class="fas fa-desktop"></i></i><br>Work</a>
-          <a href="about.html"><i class="far fa-user"></i></i><br>About</a>
-          <a href="images/elizabethSlonaker_resume.pdf" download target="_blank"><i class="fas fa-download"></i><br>Resume</a>
-          <a href="contact.html"><i class="far fa-envelope-open fa-lg"></i><br>Contact</a>
+          <a href="index.html">Work</a>
+          <a href="about.html">About</a>
+          <a href="images/elizabethSlonaker_resume.pdf" download target="_blank">Resume</a>
+          <a href="contact.html">Contact</a>
         </div>
 
         <script type="text/javascript" src="js/app.js"></script>
